@@ -59,7 +59,7 @@ hi Statement     guifg=#307aff                     gui=none
 hi Special       guifg=#ffd630                     gui=none
 hi SpecialKey    guifg=#9acd32                     gui=none
 hi String        guifg=#99e271                     gui=none
-hi Delimiter     guifg=#693d50                     gui=none
+hi link          Delimiter             PreProc
 hi Type          guifg=#a84d70                     gui=none
 hi Underlined    guifg=#80a0ff                     gui=underline
 
@@ -72,7 +72,7 @@ hi link          cssIdentifier         Type
 hi link          StorageClass          PreProc
 
 " SASS
-hi link          sassVariable          Special
+hi link          sassVariable          Statement
 
 " HTML
 hi  link         htmlString            String
@@ -91,3 +91,17 @@ hi link          liquidYamlHead        Comment
 " YAML
 hi link          yamlBlockMappingKey   PreProc
 hi link          yamlDocumentStart     Comment
+
+" Ruby
+hi link          rubyRegexpDelimiter   Special
+hi link          rubyInterpolationDelimiter Delimiter
+hi link          rubyStringDelimiter   Delimiter
+hi link          rubyClass             Keyword
+hi link          rubyModule            Keyword
+hi link          rubyKeyword           Keyword
+hi link          rubyOperator          Operator
+hi link          rubyIdentifier        Identifier
+hi link          rubyInstanceVariable  Identifier
+hi link          rubyGlobalVariable    Identifier
+hi link          rubyClassVariable     Identifier
+hi link          rubyConstant          Type
