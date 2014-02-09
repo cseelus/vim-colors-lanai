@@ -11,8 +11,8 @@
 " turquoise  #9bfda6
 " leaf       #99e271
 " lightgreen #c4f2e0
-" deepblue   #406ddf
-" purple     #6f9bf4
+" cobalt     #406ddf
+" purple     #7a99ff
 " wine       #a84d70
 " aubergine  #693d50
 " yellow     #fde9a2
@@ -50,10 +50,10 @@ hi Search        guifg=NONE       guibg=#2c2d2e    gui=underline
 " Basics
 hi Comment       guifg=#767b86                     gui=italic
 hi NonText       guifg=#535557                     gui=none
-hi Constant      guifg=#6f9bf4                     gui=none
+hi Constant      guifg=#7a99ff                     gui=none
 hi Function      guifg=#c4f2e0                     gui=none
 hi Identifier    guifg=#406ddf                     gui=none
-hi Number        guifg=#6f9bf4                     gui=none
+hi Number        guifg=#7a99ff                     gui=none
 hi PreProc       guifg=#9bfda6                     gui=none
 hi Statement     guifg=#406ddf                     gui=none
 hi Special       guifg=#fde9a2                     gui=none
