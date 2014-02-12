@@ -2,20 +2,20 @@
 " ----------------------------------------------------------------------
 " Created by Chris Seelus (@cseelus)
 "
-" rock       #171617
-" darkergrey #2c2d2e
+" darkrock   #171617
+" rock       #2c2d2e
 " darkgrey   #535557
 " grey       #767b86
 " white      #e6e7e7
 " ------------------
 " turquoise  #9bfda6
 " leaf       #99e271
-" lightgreen #c4f2e0
+" sky        #c4f2e0
 " cobalt     #406ddf
 " purple     #7a99ff
 " wine       #a84d70
 " aubergine  #693d50
-" yellow     #fde9a2
+" sap        #fde9a2
 
 
 set background=dark
