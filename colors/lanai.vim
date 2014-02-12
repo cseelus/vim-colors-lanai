@@ -73,6 +73,8 @@ hi link          StorageClass          PreProc
 
 " SASS
 hi link          sassVariable          Statement
+hi link          sassId                Type
+hi link          sassIdChar            Normal
 
 " HTML
 hi  link         htmlString            PreProc
