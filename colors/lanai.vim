@@ -6,7 +6,7 @@
 " rock       #2c2d2e
 " darkgrey   #535557
 " grey       #767b86
-" white      #e6e7e7
+" cloud      #e6e7e7
 " ------------------
 " turquoise  #9bfda6
 " leaf       #99e271
