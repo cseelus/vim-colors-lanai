@@ -82,7 +82,6 @@ hi  link         htmlArg               Statement
 hi  link         htmlTag               Type
 hi  link         htmlTagName           Type
 hi  link         htmlEndTag            Type
-hi  link         htmlSpecialChar       SpecialKey
 
 " eruby
 hi link          erubyExpression       Normal
