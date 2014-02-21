@@ -42,7 +42,7 @@ hi StatusLineNC  guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi Title         guifg=#9bfda6                     gui=bold
 hi Todo          guifg=#171617    guibg=#406ddf    gui=none
 hi VertSplit     guifg=#2c2d2e    guibg=#2c2d2e    gui=none
-hi Visual        guifg=NONE       guibg=#535557    gui=none
+hi Visual        guifg=#171617    guibg=#fde9a2    gui=none
 hi Pmenu         guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi PmenuSel      guifg=#171617    guibg=#9bfda6    gui=none
 hi Search        guifg=NONE       guibg=#2c2d2e    gui=underline
@@ -57,7 +57,7 @@ hi Number        guifg=#7a99ff                     gui=none
 hi PreProc       guifg=#9bfda6                     gui=none
 hi Statement     guifg=#406ddf                     gui=none
 hi Special       guifg=#fde9a2                     gui=none
-hi SpecialKey    guifg=#9acd32                     gui=none
+hi SpecialKey    guifg=#80a0ff                     gui=none
 hi String        guifg=#99e271                     gui=none
 hi link          Delimiter             PreProc
 hi Type          guifg=#a84d70                     gui=none
@@ -78,8 +78,11 @@ hi link          sassIdChar            Normal
 
 " HTML
 hi  link         htmlString            PreProc
-hi  link         htmlTag               Statement
-hi  link         htmlEndTag            Statement
+hi  link         htmlArg               Statement
+hi  link         htmlTag               Type
+hi  link         htmlTagName           Type
+hi  link         htmlEndTag            Type
+hi  link         htmlSpecialChar       SpecialKey
 
 " eruby
 hi link          erubyExpression       Normal
