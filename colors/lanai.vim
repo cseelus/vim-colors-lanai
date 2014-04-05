@@ -9,7 +9,7 @@
 " cloud      #e6e7e7
 " ------------------
 " turquoise  #9bfda6
-" leaf       #99e271
+" leaf       #a8ff60
 " sky        #c4f2e0
 " cobalt     #406ddf
 " purple     #7a99ff
@@ -59,8 +59,8 @@ hi PreProc       guifg=#9bfda6                     gui=none
 hi Statement     guifg=#a84d70                     gui=none
 hi Special       guifg=#fde9a2                     gui=none
 hi SpecialKey    guifg=#80a0ff                     gui=none
-hi String        guifg=#99e271                     gui=none
-hi link          Delimiter             Normal
+hi String        guifg=#9bfda6                     gui=none
+hi link          Delimiter             String
 hi Type          guifg=#406ddf                     gui=none
 hi Underlined    guifg=#80a0ff                     gui=underline
 
@@ -89,6 +89,7 @@ hi link          erubyExpression       Normal
 hi link          erubyDelimiter        PreProc
 
 "haml
+" hi link          hamlRuby              Type
 " hi link          hamlDoctype           Statement
 " hi link          hamlTag               Statement
 " hi link          hamlRubyOutputchar    Statement
@@ -104,18 +105,18 @@ hi link          yamlBlockMappingKey   PreProc
 hi link          yamlDocumentStart     Comment
 
 " Ruby
-hi link          rubyRegexpDelimiter   Special
-hi link          rubyInterpolationDelimiter Delimiter
-hi link          rubyStringDelimiter   Delimiter
 hi link          rubyClass             Keyword
-hi link          rubyModule            Keyword
-hi link          rubyKeyword           Keyword
-hi link          rubyOperator          Operator
-hi link          rubyIdentifier        Identifier
-hi link          rubyInstanceVariable  Constant
-hi link          rubyGlobalVariable    Identifier
 hi link          rubyClassVariable     Identifier
 hi link          rubyConstant          Type
+hi link          rubyGlobalVariable    Identifier
+hi link          rubyIdentifier        Identifier
+hi link          rubyInstanceVariable  Constant
+hi link          rubyInterpolation     Constant
+hi link          rubyInterpolationDelimiter Delimiter
+hi link          rubyKeyword           Keyword
+hi link          rubyModule            Keyword
+hi link          rubyOperator          Operator
+hi link          rubyRegexpDelimiter   Special
 
 " PHP
 hi link          phpParent             Normal
