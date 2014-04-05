@@ -105,17 +105,10 @@ hi link          yamlBlockMappingKey   PreProc
 hi link          yamlDocumentStart     Comment
 
 " Ruby
-hi link          rubyClass             Keyword
 hi link          rubyClassVariable     Identifier
-hi link          rubyConstant          Type
-hi link          rubyGlobalVariable    Identifier
-hi link          rubyIdentifier        Identifier
-hi link          rubyInstanceVariable  Constant
 hi link          rubyInterpolation     Constant
 hi link          rubyInterpolationDelimiter Delimiter
-hi link          rubyKeyword           Keyword
 hi link          rubyModule            Keyword
-hi link          rubyOperator          Operator
 hi link          rubyRegexpDelimiter   Special
 
 " PHP
