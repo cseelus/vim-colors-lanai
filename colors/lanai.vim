@@ -88,12 +88,6 @@ hi  link         htmlEndTag            Statement
 hi link          erubyExpression       Normal
 hi link          erubyDelimiter        PreProc
 
-"haml
-" hi link          hamlRuby              Type
-" hi link          hamlDoctype           Statement
-" hi link          hamlTag               Statement
-" hi link          hamlRubyOutputchar    Statement
-
 " liquid
 hi link          liquidDelimiter       Delimiter
 hi link          liquidKeyword         Number
