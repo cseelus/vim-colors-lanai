@@ -5,11 +5,11 @@
 " darkrock   #171617
 " rock       #2c2d2e
 " darkgrey   #535557
-" grey       #818796
+" grey       #767b86
 " cloud      #e6e7e7
 " ------------------
 " turquoise  #9bfda6
-" leaf       #a8ff60
+" leaf       #99e271
 " sky        #c4f2e0
 " cobalt     #406ddf
 " purple     #7a99ff
@@ -49,7 +49,7 @@ hi PmenuSel      guifg=#171617    guibg=#9bfda6    gui=none
 hi Search        guifg=NONE       guibg=#2c2d2e    gui=underline
 
 " Basics
-hi Comment       guifg=#818796                     gui=italic
+hi Comment       guifg=#767b86                     gui=italic
 hi NonText       guifg=#535557                     gui=none
 hi Constant      guifg=#7a99ff                     gui=none
 hi Function      guifg=#c4f2e0                     gui=none
@@ -59,7 +59,7 @@ hi PreProc       guifg=#9bfda6                     gui=none
 hi Statement     guifg=#a84d70                     gui=none
 hi Special       guifg=#fde9a2                     gui=none
 hi SpecialKey    guifg=#80a0ff                     gui=none
-hi String        guifg=#a8ff60                     gui=none
+hi String        guifg=#99e271                     gui=none
 hi link          Delimiter             Normal
 hi Type          guifg=#406ddf                     gui=none
 hi Underlined    guifg=#80a0ff                     gui=underline
@@ -87,11 +87,6 @@ hi  link         htmlEndTag            Statement
 " eruby
 hi link          erubyExpression       Normal
 hi link          erubyDelimiter        PreProc
-
-"haml
-" hi link          hamlDoctype           Statement
-" hi link          hamlTag               Statement
-" hi link          hamlRubyOutputchar    Statement
 
 " liquid
 hi link          liquidDelimiter       Delimiter
