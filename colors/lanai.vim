@@ -36,7 +36,7 @@ hi Directory     guifg=#9bfda6                     gui=none
 hi Folded        guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi LineNr        guifg=#535557                     gui=none
 hi CursorLineNr  guifg=#535557                     gui=none
-hi MatchParen    guifg=#171617    guibg=#9bfda6    gui=none
+hi MatchParen    guifg=#171617    guibg=#406ddf    gui=none
 hi StatusLine    guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi StatusLineNC  guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi Title         guifg=#9bfda6                     gui=bold
