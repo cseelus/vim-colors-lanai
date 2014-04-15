@@ -99,6 +99,7 @@ hi link          yamlBlockMappingKey   PreProc
 hi link          yamlDocumentStart     Comment
 
 " Ruby
+hi link          rubyBlockParameter    Constant
 hi link          rubyClassVariable     Identifier
 hi link          rubyInterpolation     Constant
 hi link          rubyInterpolationDelimiter Delimiter
