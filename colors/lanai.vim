@@ -65,6 +65,9 @@ hi Type          guifg=#406ddf                     gui=none
 hi Underlined    guifg=#80a0ff                     gui=underline
 
 
+" Apache
+hi link          apacheDeclaration     PreProc
+
 " CSS
 hi link          cssBraces             Normal
 hi link          cssClassName          Type
@@ -72,10 +75,9 @@ hi link          cssClassNameDot       Type
 hi link          cssIdentifier         Type
 hi link          StorageClass          PreProc
 
-" SASS
-hi link          sassVariable          Statement
-hi link          sassId                Type
-hi link          sassIdChar            Normal
+" eruby
+hi link          erubyExpression       Normal
+hi link          erubyDelimiter        PreProc
 
 " HTML
 hi  link         htmlString            PreProc
@@ -84,9 +86,8 @@ hi  link         htmlTag               Statement
 hi  link         htmlTagName           Statement
 hi  link         htmlEndTag            Statement
 
-" eruby
-hi link          erubyExpression       Normal
-hi link          erubyDelimiter        PreProc
+" LaTeX
+hi link          texInputFile          PreProc
 
 " liquid
 hi link          liquidDelimiter       Delimiter
@@ -94,9 +95,8 @@ hi link          liquidKeyword         Number
 hi link          liquidSpecial         Delimiter
 hi link          liquidYamlHead        Comment
 
-" YAML
-hi link          yamlBlockMappingKey   PreProc
-hi link          yamlDocumentStart     Comment
+" PHP
+hi link          phpParent             Normal
 
 " Ruby
 hi link          rubyBlockParameter    Constant
@@ -106,11 +106,11 @@ hi link          rubyInterpolationDelimiter Delimiter
 hi link          rubyModule            Keyword
 hi link          rubyRegexpDelimiter   Special
 
-" PHP
-hi link          phpParent             Normal
+" SASS
+hi link          sassVariable          Statement
+hi link          sassId                Type
+hi link          sassIdChar            Normal
 
-" Apache
-hi link          apacheDeclaration     PreProc
-
-" LaTeX
-hi link          texInputFile          PreProc
+" YAML
+hi link          yamlBlockMappingKey   PreProc
+hi link          yamlDocumentStart     Comment
