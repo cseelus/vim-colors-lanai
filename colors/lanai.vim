@@ -108,6 +108,12 @@ hi link           liquidYamlHead        Comment
 " PHP
 hi link           phpParent             Normal
 
+" PlainTasks (.todo)
+hi link           ptCompleteTask        Number
+hi link           ptContext             Type
+hi link           ptSection             String
+hi link           ptTask                Normal
+
 " Ruby
 hi link           rubyBlockParameter    Constant
 hi link           rubyClassVariable     Identifier
