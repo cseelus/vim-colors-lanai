@@ -49,6 +49,7 @@ hi PmenuSel       guifg=#171617    guibg=#9bfda6    gui=none
 hi Search         guifg=NONE       guibg=#2c2d2e    gui=underline
 hi Error          guifg=NONE       guibg=#a84d70
 
+
 " Basics
 hi Comment        guifg=#818796                     gui=italic
 hi NonText        guifg=#535557                     gui=none
