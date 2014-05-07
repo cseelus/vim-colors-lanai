@@ -47,6 +47,7 @@ hi Conceal        guifg=#e6e7e7    guibg=#406ddf    gui=none
 hi Pmenu          guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi PmenuSel       guifg=#171617    guibg=#9bfda6    gui=none
 hi Search         guifg=NONE       guibg=#2c2d2e    gui=underline
+hi Error          guifg=NONE       guibg=#a84d70
 
 " Basics
 hi Comment        guifg=#818796                     gui=italic
@@ -87,8 +88,9 @@ hi link           hamlRubyChar          Identifier
 hi link           hamlRubyOutputChar    Identifier
 
 " HTML
-hi  link          htmlString            PreProc
 hi  link          htmlArg               Type
+hi  link          htmlError             Error
+hi  link          htmlString            PreProc
 hi  link          htmlTag               Statement
 hi  link          htmlTagName           Statement
 hi  link          htmlEndTag            Statement
