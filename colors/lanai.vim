@@ -119,6 +119,7 @@ hi link           rubyBlockParameter    Constant
 hi link           rubyClassVariable     Identifier
 hi link           rubyInterpolation     Constant
 hi link           rubyInterpolationDelimiter Delimiter
+hi link           rubyLocalVariableOrMethod  Identifier
 hi link           rubyModule            Keyword
 hi link           rubyRegexpDelimiter   Special
 
@@ -126,6 +127,9 @@ hi link           rubyRegexpDelimiter   Special
 hi link           sassVariable          Statement
 hi link           sassId                Type
 hi link           sassIdChar            Normal
+
+" Slim
+hi link           slimRubyOutputChar    Identifier
 
 " YAML
 hi link           yamlBlockMappingKey   PreProc
