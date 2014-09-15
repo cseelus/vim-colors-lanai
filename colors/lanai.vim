@@ -48,7 +48,7 @@ hi Pmenu          guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi PmenuSel       guifg=#171617    guibg=#9bfda6    gui=none
 hi Search         guifg=NONE       guibg=#2c2d2e    gui=underline
 hi Error          guifg=NONE       guibg=#a84d70
-
+hi ModeMsg        guifg=#171617    guibg=#a1ffbc
 
 " Basics
 hi Comment        guifg=#818796                     gui=italic
