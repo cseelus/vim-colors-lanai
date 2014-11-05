@@ -54,10 +54,10 @@ hi ModeMsg        guifg=#171617    guibg=#a1ffbc
 hi Comment        guifg=#818796                     gui=italic
 hi NonText        guifg=#535557                     gui=none
 hi Constant       guifg=#7a99ff                     gui=none
-hi Function       guifg=#c4f2e0                     gui=bold
+hi Function       guifg=#9bfda6                     gui=bold
 hi Identifier     guifg=#a84d70                     gui=none
 hi Number         guifg=#7a99ff                     gui=none
-hi PreProc        guifg=#9bfda6                     gui=bold
+hi PreProc        guifg=#c4f2e0                     gui=bold
 hi Statement      guifg=#a84d70                     gui=bold
 hi Special        guifg=#fde9a2                     gui=none
 hi SpecialKey     guifg=#818796                     gui=none
