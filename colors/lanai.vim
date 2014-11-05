@@ -11,8 +11,8 @@
 " turquoise  #9bfda6
 " leaf       #b9ffa3
 " sky        #c4f2e0
-" cobalt     #3672ff
-" purple     #7a99ff
+" cobalt     #447dff
+" purple     #93a7ff
 " wine       #a84d70
 " aubergine  #693d50
 " sap        #fde9a2
@@ -36,14 +36,14 @@ hi Directory      guifg=#9bfda6                     gui=none
 hi Folded         guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi LineNr         guifg=#535557                     gui=none
 hi CursorLineNr   guifg=#535557                     gui=none
-hi MatchParen     guifg=#171617    guibg=#3672ff    gui=none
+hi MatchParen     guifg=#171617    guibg=#447dff    gui=none
 hi StatusLine     guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi StatusLineNC   guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi Title          guifg=#9bfda6                     gui=bold
-hi Todo           guifg=#171617    guibg=#3672ff    gui=none
+hi Todo           guifg=#171617    guibg=#447dff    gui=none
 hi VertSplit      guifg=#2c2d2e    guibg=#2c2d2e    gui=none
 hi Visual         guifg=#171617    guibg=#fde9a2    gui=none
-hi Conceal        guifg=#e6e7e7    guibg=#3672ff    gui=none
+hi Conceal        guifg=#e6e7e7    guibg=#447dff    gui=none
 hi Pmenu          guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi PmenuSel       guifg=#171617    guibg=#9bfda6    gui=none
 hi Search         guifg=NONE       guibg=#2c2d2e    gui=underline
@@ -53,17 +53,17 @@ hi ModeMsg        guifg=#171617    guibg=#a1ffbc
 " Basics
 hi Comment        guifg=#818796                     gui=italic
 hi NonText        guifg=#535557                     gui=none
-hi Constant       guifg=#7a99ff                     gui=none
+hi Constant       guifg=#93a7ff                     gui=none
 hi Function       guifg=#9bfda6                     gui=bold
 hi Identifier     guifg=#a84d70                     gui=none
-hi Number         guifg=#7a99ff                     gui=none
+hi Number         guifg=#93a7ff                     gui=none
 hi PreProc        guifg=#c4f2e0                     gui=bold
 hi Statement      guifg=#a84d70                     gui=bold
 hi Special        guifg=#fde9a2                     gui=none
 hi SpecialKey     guifg=#818796                     gui=none
 hi String         guifg=#b9ffa3                     gui=none
 hi StorageClass   guifg=#e6e7e7                     gui=bold
-hi Type           guifg=#3672ff                     gui=bold
+hi Type           guifg=#447dff                     gui=bold
 hi Underlined     guifg=#80a0ff                     gui=underline
 hi FoldColumn                      guibg=#171617
 hi PmenuSbar                       guibg=#171617
