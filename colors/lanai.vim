@@ -8,10 +8,10 @@
 " grey       #818796
 " cloud      #e6e7e7
 " ------------------
-" turquoise  #91ffbc
-" leaf       #a8ff60
+" turquoise  #9bfda6
+" leaf       #b9ffa3
 " sky        #c4f2e0
-" cobalt     #406ddf
+" cobalt     #3672ff
 " purple     #7a99ff
 " wine       #a84d70
 " aubergine  #693d50
@@ -32,20 +32,20 @@ hi Normal         guifg=#e6e7e7    guibg=#171617    gui=none
 hi Cursor         guifg=#171617    guibg=#e6e7e7    gui=none
 hi CursorLine     guifg=NONE       guibg=#404040    gui=none
 hi ColorColumn    guifg=#171617    guibg=#693d50    gui=none
-hi Directory      guifg=#91ffbc                     gui=none
+hi Directory      guifg=#9bfda6                     gui=none
 hi Folded         guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi LineNr         guifg=#535557                     gui=none
 hi CursorLineNr   guifg=#535557                     gui=none
-hi MatchParen     guifg=#171617    guibg=#406ddf    gui=none
+hi MatchParen     guifg=#171617    guibg=#3672ff    gui=none
 hi StatusLine     guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi StatusLineNC   guifg=#e6e7e7    guibg=#2c2d2e    gui=none
-hi Title          guifg=#91ffbc                     gui=bold
-hi Todo           guifg=#171617    guibg=#406ddf    gui=none
+hi Title          guifg=#9bfda6                     gui=bold
+hi Todo           guifg=#171617    guibg=#3672ff    gui=none
 hi VertSplit      guifg=#2c2d2e    guibg=#2c2d2e    gui=none
 hi Visual         guifg=#171617    guibg=#fde9a2    gui=none
-hi Conceal        guifg=#e6e7e7    guibg=#406ddf    gui=none
+hi Conceal        guifg=#e6e7e7    guibg=#3672ff    gui=none
 hi Pmenu          guifg=#e6e7e7    guibg=#2c2d2e    gui=none
-hi PmenuSel       guifg=#171617    guibg=#91ffbc    gui=none
+hi PmenuSel       guifg=#171617    guibg=#9bfda6    gui=none
 hi Search         guifg=NONE       guibg=#2c2d2e    gui=underline
 hi Error          guifg=NONE       guibg=#a84d70
 hi ModeMsg        guifg=#171617    guibg=#a1ffbc
@@ -54,17 +54,22 @@ hi ModeMsg        guifg=#171617    guibg=#a1ffbc
 hi Comment        guifg=#818796                     gui=italic
 hi NonText        guifg=#535557                     gui=none
 hi Constant       guifg=#7a99ff                     gui=none
-hi Function       guifg=#c4f2e0                     gui=none
+hi Function       guifg=#c4f2e0                     gui=bold
 hi Identifier     guifg=#a84d70                     gui=none
 hi Number         guifg=#7a99ff                     gui=none
-hi PreProc        guifg=#91ffbc                     gui=none
-hi Statement      guifg=#a84d70                     gui=none
+hi PreProc        guifg=#9bfda6                     gui=bold
+hi Statement      guifg=#a84d70                     gui=bold
 hi Special        guifg=#fde9a2                     gui=none
-hi SpecialKey     guifg=#80a0ff                     gui=none
-hi String         guifg=#91ffbc                     gui=none
-hi link           Delimiter             String
-hi Type           guifg=#406ddf                     gui=none
+hi SpecialKey     guifg=#818796                     gui=none
+hi String         guifg=#b9ffa3                     gui=none
+hi StorageClass   guifg=#e6e7e7                     gui=bold
+hi Type           guifg=#3672ff                     gui=bold
 hi Underlined     guifg=#80a0ff                     gui=underline
+hi FoldColumn                      guibg=#171617
+hi PmenuSbar                       guibg=#171617
+hi SignColumn                      guibg=#171617
+hi link           Delimiter             String
+hi link           Operator              PreProc
 
 
 " Apache
@@ -75,7 +80,6 @@ hi link           cssBraces             Normal
 hi link           cssClassName          Type
 hi link           cssClassNameDot       Type
 hi link           cssIdentifier         Type
-hi link           StorageClass          PreProc
 
 " eruby
 hi link           erubyExpression       Normal
@@ -124,12 +128,18 @@ hi link           rubyModule            Keyword
 hi link           rubyRegexpDelimiter   Special
 
 " SASS
-hi link           sassVariable          Statement
+hi link           sassCssAttribute      Type
+hi link           sassClassChar         Type
 hi link           sassId                Type
-hi link           sassIdChar            Normal
+hi link           sassIdChar            Type
+hi link           sassMixinName         StorageClass
+hi link           sassVariable          Statement
 
 " Slim
 hi link           slimRubyOutputChar    Identifier
+hi link           slimClassChar         Type
+hi link           slimId                Type
+hi link           slimIdChar            Type
 
 " YAML
 hi link           yamlBlockMappingKey   PreProc
