@@ -15,7 +15,7 @@
 " cobalt     #447dff
 " purple     #93a7ff
 " wine       #a84d70
-" aubergine  #c4628e
+" aubergine  #b05f57
 " orange     #fbbe5f
 " sap        #fde9a2
 
@@ -33,7 +33,7 @@ let colors_name = "lanai"
 hi Normal         guifg=#d2d3d3    guibg=#0d0d0d    gui=none
 hi Cursor         guifg=#0d0d0d    guibg=#e6e7e7    gui=none
 hi CursorLine     guifg=NONE       guibg=#404040    gui=none
-hi ColorColumn    guifg=#0d0d0d    guibg=#c4628e    gui=none
+hi ColorColumn    guifg=#0d0d0d    guibg=#b05f57    gui=none
 hi Directory      guifg=#9bfda6                     gui=none
 hi Folded         guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi LineNr         guifg=#535557                     gui=none
@@ -65,7 +65,7 @@ hi Special        guifg=#fbbe5f                     gui=none
 hi SpecialKey     guifg=#d2d3d3                     gui=none
 hi String         guifg=#b9ffa3                     gui=none
 hi StorageClass   guifg=#e6e7e7                     gui=bold
-hi Type           guifg=#c4628e                     gui=none
+hi Type           guifg=#b05f57                     gui=none
 hi Underlined     guifg=#80a0ff                     gui=underline
 hi FoldColumn                      guibg=#0d0d0d
 hi PmenuSbar                       guibg=#0d0d0d
