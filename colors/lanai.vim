@@ -2,7 +2,7 @@
 " ----------------------------------------------------------------------
 " Created by Chris Seelus (@cseelus)
 "
-" darkrock   #090909
+" darkrock   #171617
 " rock       #2c2d2e
 " darkgrey   #535557
 " grey       #82868a
@@ -31,27 +31,27 @@ let colors_name = "lanai"
 
 
 " Interface
-hi Normal         guifg=#d2d3d3    guibg=#090909    gui=none
-hi Cursor         guifg=#090909    guibg=#e6e7e7    gui=none
+hi Normal         guifg=#d2d3d3    guibg=#171617    gui=none
+hi Cursor         guifg=#171617    guibg=#e6e7e7    gui=none
 hi CursorLine     guifg=NONE       guibg=#404040    gui=none
-hi ColorColumn    guifg=#090909    guibg=#b05f57    gui=none
+hi ColorColumn    guifg=#171617    guibg=#b05f57    gui=none
 hi Directory      guifg=#9bfda6                     gui=none
 hi Folded         guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi LineNr         guifg=#535557                     gui=none
 hi CursorLineNr   guifg=#535557                     gui=none
-hi MatchParen     guifg=#090909    guibg=#447dff    gui=none
+hi MatchParen     guifg=#171617    guibg=#447dff    gui=none
 hi StatusLine     guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi StatusLineNC   guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi Title          guifg=#9bfda6                     gui=bold
-hi Todo           guifg=#090909    guibg=#447dff    gui=none
+hi Todo           guifg=#171617    guibg=#447dff    gui=none
 hi VertSplit      guifg=#2c2d2e    guibg=#2c2d2e    gui=none
-hi Visual         guifg=#090909    guibg=#fde9a2    gui=none
+hi Visual         guifg=#171617    guibg=#fde9a2    gui=none
 hi Conceal        guifg=#e6e7e7    guibg=#447dff    gui=none
 hi Pmenu          guifg=#e6e7e7    guibg=#2c2d2e    gui=none
-hi PmenuSel       guifg=#090909    guibg=#9bfda6    gui=none
+hi PmenuSel       guifg=#171617    guibg=#9bfda6    gui=none
 hi Search         guifg=NONE       guibg=#2c2d2e    gui=underline
 hi Error          guifg=NONE       guibg=#a84d70
-hi ModeMsg        guifg=#090909    guibg=#a1ffbc
+hi ModeMsg        guifg=#171617    guibg=#a1ffbc
 
 " Basics
 hi Comment        guifg=#82868a                     gui=italic
@@ -69,9 +69,9 @@ hi Delimiter      guifg=#5c874e
 hi StorageClass   guifg=#e6e7e7                     gui=bold
 hi Type           guifg=#447dff                     gui=none
 hi Underlined     guifg=#80a0ff                     gui=underline
-hi FoldColumn                      guibg=#090909
-hi PmenuSbar                       guibg=#090909
-hi SignColumn                      guibg=#090909
+hi FoldColumn                      guibg=#171617
+hi PmenuSbar                       guibg=#171617
+hi SignColumn                      guibg=#171617
 hi link           Conditional           Statement
 hi link           Operator              PreProc
 
@@ -123,9 +123,10 @@ hi link           ptSection             String
 hi link           ptTask                Normal
 
 " Ruby
-hi link           rubyDefine       Statement
 hi link           rubyBlockParameter    Constant
 hi link           rubyClassVariable     Identifier
+hi link           rubyClassDeclaration  Identifier
+hi link           rubyDefine       Statement
 hi link           rubyInterpolation     Constant
 hi link           rubyInterpolationDelimiter Delimiter
 hi link           rubyLocalVariableOrMethod  Identifier
