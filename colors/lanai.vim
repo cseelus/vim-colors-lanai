@@ -57,7 +57,7 @@ hi Comment        guifg=#82868a                     gui=italic
 hi NonText        guifg=#535557                     gui=none
 hi Constant       guifg=#93a7ff                     gui=none
 hi Function       guifg=#9bfda6                     gui=none
-hi Identifier     guifg=#a84d70                     gui=bold
+hi Identifier     guifg=#b05f57                     gui=bold
 hi Number         guifg=#93a7ff                     gui=none
 hi PreProc        guifg=#c4f2e0                     gui=none
 hi Statement      guifg=#a84d70                     gui=bold
@@ -65,7 +65,7 @@ hi Special        guifg=#fbbe5f                     gui=none
 hi SpecialKey     guifg=#d2d3d3                     gui=none
 hi String         guifg=#b9ffa3                     gui=none
 hi StorageClass   guifg=#e6e7e7                     gui=bold
-hi Type           guifg=#b05f57                     gui=none
+hi Type           guifg=#447dff                     gui=none
 hi Underlined     guifg=#80a0ff                     gui=underline
 hi FoldColumn                      guibg=#0d0d0d
 hi PmenuSbar                       guibg=#0d0d0d
