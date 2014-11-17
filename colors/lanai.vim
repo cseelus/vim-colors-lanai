@@ -153,6 +153,7 @@ hi link           slimIdChar            Type
 " XML
 hi  link          xmlTag                Statement
 hi  link          xmlTagName            Statement
+hi  link          xmlEndTag             Statement
 
 " YAML
 hi link           yamlBlockMappingKey   PreProc
