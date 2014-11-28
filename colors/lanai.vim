@@ -123,18 +123,18 @@ hi link           ptSection             String
 hi link           ptTask                Normal
 
 " Ruby
-hi link           rubyBlockParameter    Constant
-hi link           rubyClassVariable     Identifier
-hi link           rubyClassDeclaration  Identifier
-hi link           rubyDefine       Statement
-hi link           rubyInterpolation     Constant
-hi link           rubyInterpolationDelimiter Delimiter
-hi link           rubyLocalVariableOrMethod  Identifier
-hi link           rubyModule            Keyword
-hi link           rubyRegexp            Special
-hi link           rubyRegexpDelimiter   Special
-hi link           rubyStringDelimiter   Delimiter
-hi link           rubySharpBang         Special
+" hi link           rubyBlockParameter    Constant
+" hi link           rubyClassVariable     Identifier
+" hi link           rubyClassDeclaration  Identifier
+" hi link           rubyDefine       Statement
+" hi link           rubyInterpolation     Constant
+" hi link           rubyInterpolationDelimiter Delimiter
+" hi link           rubyLocalVariableOrMethod  Identifier
+" hi link           rubyModule            Keyword
+" hi link           rubyRegexp            Special
+" hi link           rubyRegexpDelimiter   Special
+" hi link           rubyStringDelimiter   Delimiter
+" hi link           rubySharpBang         Special
 
 " SASS
 hi link           sassCssAttribute      Type
