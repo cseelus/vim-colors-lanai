@@ -9,15 +9,15 @@
 " lightgrey  #d2d3d3
 " cloud      #e6e7e7
 " ------------------
+" darkleaf   #78ad7c
 " turquoise  #9bfda6
-" darkleaf   #5c874e
 " leaf       #b9ffa3
 " sky        #c4f2e0
 " cobalt     #447dff
 " purple     #93a7ff
 " wine       #a84d70
 " aubergine  #8254a3
-" orange     #fbbe5f
+" orange     #f9cc87
 " sap        #fde9a2
 
 
@@ -59,13 +59,13 @@ hi NonText        guifg=#535557                     gui=none
 hi Constant       guifg=#93a7ff                     gui=none
 hi Function       guifg=#9bfda6                     gui=none
 hi Identifier     guifg=#8e70a3                     gui=none
-hi Number         guifg=#93a7ff                     gui=none
+hi Number         guifg=#447dff                     gui=none
 hi PreProc        guifg=#f9cc87                     gui=none
 hi Statement      guifg=#a84d70                     gui=none
 hi Special        guifg=#fde9a2                     gui=none
 hi SpecialKey     guifg=#d2d3d3                     gui=none
 hi String         guifg=#b9ffa3                     gui=none
-hi Delimiter      guifg=#5c874e
+hi Delimiter      guifg=#78ad7c
 hi StorageClass   guifg=#e6e7e7                     gui=bold
 hi Type           guifg=#447dff                     gui=none
 hi Underlined     guifg=#80a0ff                     gui=underline
