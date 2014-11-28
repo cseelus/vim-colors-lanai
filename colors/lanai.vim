@@ -10,14 +10,14 @@
 " cloud      #e6e7e7
 " ------------------
 " darkleaf   #78ad7c
-" turquoise  #9bfda6
+" turquoise  #abffb1
 " leaf       #b9ffa3
 " sky        #c4f2e0
-" cobalt     #447dff
-" purple     #93a7ff
+" cobalt     #508dff
+" purple     #a1bbff
 " wine       #a84d70
-" aubergine  #8254a3
-" orange     #f9cc87
+" aubergine  #7f6592
+" orange     #f7daac
 " sap        #fde9a2
 
 
@@ -35,20 +35,20 @@ hi Normal         guifg=#d2d3d3    guibg=#171617    gui=none
 hi Cursor         guifg=#171617    guibg=#e6e7e7    gui=none
 hi CursorLine     guifg=NONE       guibg=#404040    gui=none
 hi ColorColumn    guifg=#171617    guibg=#b05f57    gui=none
-hi Directory      guifg=#9bfda6                     gui=none
+hi Directory      guifg=#abffb1                     gui=none
 hi Folded         guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi LineNr         guifg=#535557                     gui=none
 hi CursorLineNr   guifg=#535557                     gui=none
-hi MatchParen     guifg=#171617    guibg=#447dff    gui=none
+hi MatchParen     guifg=#171617    guibg=#508dff    gui=none
 hi StatusLine     guifg=#e6e7e7    guibg=#2c2d2e    gui=none
 hi StatusLineNC   guifg=#e6e7e7    guibg=#2c2d2e    gui=none
-hi Title          guifg=#9bfda6                     gui=bold
-hi Todo           guifg=#171617    guibg=#447dff    gui=none
+hi Title          guifg=#abffb1                     gui=bold
+hi Todo           guifg=#171617    guibg=#508dff    gui=none
 hi VertSplit      guifg=#2c2d2e    guibg=#2c2d2e    gui=none
 hi Visual         guifg=#171617    guibg=#fde9a2    gui=none
-hi Conceal        guifg=#e6e7e7    guibg=#447dff    gui=none
+hi Conceal        guifg=#e6e7e7    guibg=#508dff    gui=none
 hi Pmenu          guifg=#e6e7e7    guibg=#2c2d2e    gui=none
-hi PmenuSel       guifg=#171617    guibg=#9bfda6    gui=none
+hi PmenuSel       guifg=#171617    guibg=#abffb1    gui=none
 hi Search         guifg=NONE       guibg=#2c2d2e    gui=underline
 hi Error          guifg=NONE       guibg=#a84d70
 hi ModeMsg        guifg=#171617    guibg=#a1ffbc
@@ -56,18 +56,18 @@ hi ModeMsg        guifg=#171617    guibg=#a1ffbc
 " Basics
 hi Comment        guifg=#82868a                     gui=italic
 hi NonText        guifg=#535557                     gui=none
-hi Constant       guifg=#93a7ff                     gui=none
-hi Function       guifg=#9bfda6                     gui=none
-hi Identifier     guifg=#8e70a3                     gui=none
-hi Number         guifg=#447dff                     gui=none
-hi PreProc        guifg=#f9cc87                     gui=none
-hi Statement      guifg=#a84d70                     gui=none
+hi Constant       guifg=#a1bbff                     gui=none
+hi Function       guifg=#508dff                     gui=none
+hi Identifier     guifg=#7f6592                     gui=none
+hi Number         guifg=#508dff                     gui=none
+hi PreProc        guifg=#abffb1                     gui=none
+hi Statement      guifg=#f7daac                     gui=none
 hi Special        guifg=#fde9a2                     gui=none
 hi SpecialKey     guifg=#d2d3d3                     gui=none
 hi String         guifg=#b9ffa3                     gui=none
 hi Delimiter      guifg=#78ad7c
 hi StorageClass   guifg=#e6e7e7                     gui=bold
-hi Type           guifg=#447dff                     gui=none
+hi Type           guifg=#a84d70                     gui=none
 hi Underlined     guifg=#80a0ff                     gui=underline
 hi FoldColumn                      guibg=#171617
 hi PmenuSbar                       guibg=#171617
@@ -123,6 +123,7 @@ hi link           ptSection             String
 hi link           ptTask                Normal
 
 " Ruby
+hi link           rubyInclude           Function
 " hi link           rubyBlockParameter    Constant
 " hi link           rubyClassVariable     Identifier
 " hi link           rubyClassDeclaration  Identifier
