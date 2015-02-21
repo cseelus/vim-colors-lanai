@@ -2,23 +2,31 @@
 " ----------------------------------------------------------------------
 " Created by Chris Seelus (@cseelus)
 "
-" darkrock   #171617
-" rock       #2c2d2e
-" darkgrey   #535557
-" grey       #82868a
-" lightgrey  #d2d3d3
-" cloud      #e6e7e7
-" ------------------
-" darkleaf   #78ad7c
-" turquoise  #9bfda6
-" leaf       #b9ffa3
-" sky        #c4f2e0
-" cobalt     #447dff
-" purple     #93a7ff
-" wine       #a84d70
-" aubergine  #8254a3
-" orange     #f9cc87
-" sap        #fde9a2
+:let darkrock  = '#171617'
+:let rock      = '#2c2d2e'
+:let darkgrey  = '#535557'
+:let grey      = '#82868a'
+:let lightgrey = '#d2d3d3'
+:let cloud     = '#e6e7e7'
+" ------------------------
+:let darkleaf  = '#78ad7c'
+:let turquoise = '#9bfda6'
+:let leaf      = '#99e271'
+:let sky       = '#c4f2e0'
+:let cobalt    = '#406ddf'
+:let purple    = '#7a99ff'
+:let wine      = '#a84d70'
+:let aubergine = '#693d50'
+:let orange    = '#f4c3a5'
+:let sap       = '#fde9a2'
+
+" Strange color issue for MacVim; Colors too saturated + wrong hue
+if has("gui_macvim")
+  :let turquoise = '#b8ffb1'
+  :let purple    = '#81a5ff'
+  :let wine      = '#a65575'
+  :let aubergine = '#816485'
+endif
 
 
 set background=dark
@@ -28,133 +36,195 @@ if exists("syntax_on")
 endif
 set t_Co=256
 let colors_name = "lanai"
+let colorgroup = {}
 
 
 " Interface
-hi Normal         guifg=#d2d3d3    guibg=#171617    gui=none
-hi Cursor         guifg=#171617    guibg=#e6e7e7    gui=none
-hi CursorLine     guifg=NONE       guibg=#404040    gui=none
-hi ColorColumn    guifg=#171617    guibg=#b05f57    gui=none
-hi Directory      guifg=#9bfda6                     gui=none
-hi Folded         guifg=#e6e7e7    guibg=#2c2d2e    gui=none
-hi LineNr         guifg=#535557                     gui=none
-hi CursorLineNr   guifg=#535557                     gui=none
-hi MatchParen     guifg=#171617    guibg=#447dff    gui=none
-hi StatusLine     guifg=#e6e7e7    guibg=#2c2d2e    gui=none
-hi StatusLineNC   guifg=#e6e7e7    guibg=#2c2d2e    gui=none
-hi Title          guifg=#9bfda6                     gui=bold
-hi Todo           guifg=#171617    guibg=#447dff    gui=none
-hi VertSplit      guifg=#2c2d2e    guibg=#2c2d2e    gui=none
-hi Visual         guifg=#171617    guibg=#fde9a2    gui=none
-hi Conceal        guifg=#e6e7e7    guibg=#447dff    gui=none
-hi Pmenu          guifg=#e6e7e7    guibg=#2c2d2e    gui=none
-hi PmenuSel       guifg=#171617    guibg=#9bfda6    gui=none
-hi Search         guifg=NONE       guibg=#2c2d2e    gui=underline
-hi Error          guifg=NONE       guibg=#a84d70
-hi ModeMsg        guifg=#171617    guibg=#a1ffbc
+" ----------------------------------------------------------------------
+let colorgroup['Normal']       = {"GUIFG": cloud,     "GUIBG":  darkrock}
+" ------------------------
+let colorgroup['Darker']       = {"GUIFG": grey,      "GUIBG":  darkrock}
+let colorgroup['ColorColumn']  = {"GUIFG": darkrock,  "GUIBG":  wine}
+let colorgroup['Conceal']      = {"GUIFG": cloud,     "GUIBG":  cobalt}
+let colorgroup['Cursor']       = {"GUIFG": darkrock,  "GUIBG":  cloud}
+let colorgroup['CursorLine']   = {                    "GUIBG":  "#404040"}
+let colorgroup['CursorLineNr'] = {"GUIFG": darkgrey,  "GUIBG":  darkrock}
+let colorgroup['Error']        = {                    "GUIBG":  wine}
+let colorgroup['Directory']    = {"GUIFG": turquoise, "GUIBG":  darkrock}
+let colorgroup['FoldColumn']   = {                    "GUIBG":  darkrock}
+let colorgroup['Folded']       = {"GUIFG": cloud,     "GUIBG":  rock}
+let colorgroup['LineNr']       = {"GUIFG": darkgrey,  "GUIBG":  darkrock}
+let colorgroup['MatchParen']   = {"GUIFG": darkrock,  "GUIBG":  cobalt}
+let colorgroup['ModeMsg']      = {"GUIFG": darkrock,  "GUIBG":  turquoise}
+let colorgroup['Pmenu']        = {"GUIFG": cloud,     "GUIBG":  rock}
+let colorgroup['PmenuSel']     = {"GUIFG": darkrock,  "GUIBG":  turquoise}
+let colorgroup['PmenuSbar']    = {                    "GUIBG":  darkrock}
+let colorgroup['Search']       = {                    "GUIBG":  rock}
+let colorgroup['SignColumn']   = {                    "GUIBG":  darkrock}
+let colorgroup['StatusLine']   = {"GUIFG": cloud,     "GUIBG":  rock}
+let colorgroup['StatusLineNC'] = {"GUIFG": cloud,     "GUIBG":  rock}
+let colorgroup['Title']        = {"GUIFG": turquoise}
+let colorgroup['Todo']         = {"GUIFG": darkrock,  "GUIBG":  cobalt}
+let colorgroup['VertSplit']    = {"GUIFG": rock,      "GUIBG":  rock}
+let colorgroup['Visual']       = {"GUIFG": darkrock,  "GUIBG":  sap}
 
-" Basics
-hi Comment        guifg=#82868a                     gui=italic
-hi NonText        guifg=#535557                     gui=none
-hi Constant       guifg=#93a7ff                     gui=none
-hi Function       guifg=#9bfda6                     gui=none
-hi Identifier     guifg=#8e70a3                     gui=none
-hi Number         guifg=#447dff                     gui=none
-hi PreProc        guifg=#f9cc87                     gui=none
-hi Statement      guifg=#a84d70                     gui=none
-hi Special        guifg=#fde9a2                     gui=none
-hi SpecialKey     guifg=#d2d3d3                     gui=none
-hi String         guifg=#b9ffa3                     gui=none
-hi Delimiter      guifg=#78ad7c
-hi StorageClass   guifg=#e6e7e7                     gui=bold
-hi Type           guifg=#447dff                     gui=none
-hi Underlined     guifg=#80a0ff                     gui=underline
-hi FoldColumn                      guibg=#171617
-hi PmenuSbar                       guibg=#171617
-hi SignColumn                      guibg=#171617
-hi link           Conditional           Statement
-hi link           Operator              PreProc
+
+" Syntax
+" ----------------------------------------------------------------------
+let colorgroup['Comment']      = {"GUIFG": grey}
+let colorgroup['Constant']     = {"GUIFG": purple}
+let colorgroup['Delimiter']    = {"GUIFG": darkleaf}
+let colorgroup['Function']     = {"GUIFG": cobalt}
+let colorgroup['Identifier']   = {"GUIFG": purple}
+let colorgroup['NonText']      = {"GUIFG": rock}
+let colorgroup['Number']       = {"GUIFG": sky}
+let colorgroup['PreProc']      = {"GUIFG": wine}
+let colorgroup['Statement']    = {"GUIFG": wine}
+let colorgroup['Special']      = {"GUIFG": sap}
+let colorgroup['SpecialKey']   = {"GUIFG": lightgrey}
+let colorgroup['String']       = {"GUIFG": turquoise}
+let colorgroup['StorageClass'] = {"GUIFG": cloud,     "GUI": "bold"}
+let colorgroup['Type']         = {"GUIFG": aubergine}
+let colorgroup['Underlined']   = {"GUIFG": purple,    "GUI": "underline"}
+" ------------------------
+hi link Boolean              Constant
+hi link Conditional          Statement
+hi link Character            Constant
+hi link Debug                Special
+hi link Define               PreProc
+hi link Exception            Statement
+hi link Float                Number
+hi link Include              PreProc
+hi link Label                Statement
+hi link Macro                PreProc
+hi link Operator             PreProc
+hi link PreCondit            PreProc
+hi link Repeat               Statement
+hi link SpecialChar          Special
+hi link SpecialComment       Special
+hi link Structure            Type
+hi link Typedef              Type
+hi link Tag                  Special
 
 
 " Apache
-hi link           apacheDeclaration     PreProc
+hi link apacheDeclaration    PreProc
 
 " CSS
-hi link           cssBraces             Normal
-hi link           cssClassName          Type
-hi link           cssClassNameDot       Type
-hi link           cssIdentifier         Type
+hi link cssBoxAttr           String
+hi link cssCommonAttr        String
+hi link cssPositioningAttr   String
+hi link cssTextAttr          String
 
 " eruby
-hi link           erubyExpression       Normal
-hi link           erubyDelimiter        PreProc
+hi link erubyExpression      Normal
+hi link erubyDelimiter       PreProc
 
 " Haml
-hi link           hamlAttributesHash    Identifier
-hi link           hamlTag               Identifier
-hi link           hamlRuby              Identifier
-hi link           hamlRubyChar          Identifier
-hi link           hamlRubyOutputChar    Identifier
+hi link hamlTag              Statement
 
 " HTML
-hi  link          htmlArg               Type
-hi  link          htmlError             Error
-hi  link          htmlString            Function
-hi  link          htmlTag               Statement
-hi  link          htmlTagName           Statement
-hi  link          htmlEndTag            Statement
+hi link htmlTag              Statement
+hi link htmlEndTag           Statement
 
 " LaTeX
-hi link           texInputFile          PreProc
+hi link texInputFile         PreProc
 
-" liquid
-hi link           liquidDelimiter       Delimiter
-hi link           liquidKeyword         Number
-hi link           liquidSpecial         Delimiter
-hi link           liquidYamlHead        Comment
+" NERDtree
+hi link NerdTreeClosable     Statement
+hi link NerdTreeDirSlash     Statement
 
 " PHP
-hi link           phpParent             Normal
+hi link phpParent            Normal
+hi link phpRegion            Comment
+hi link phpVarSelector       Identifier
 
 " PlainTasks (.todo)
-hi link           ptCompleteTask        Number
-hi link           ptContext             Type
-hi link           ptSection             String
-hi link           ptTask                Normal
-
-" Ruby
-hi link           rubyBlockParameter    Constant
-hi link           rubyClassVariable     Identifier
-hi link           rubyClassDeclaration  Identifier
-hi link           rubyDefine       Statement
-hi link           rubyInterpolation     Constant
-hi link           rubyInterpolationDelimiter Delimiter
-hi link           rubyLocalVariableOrMethod  Identifier
-hi link           rubyModule            Keyword
-hi link           rubyRegexp            Special
-hi link           rubyRegexpDelimiter   Special
-hi link           rubyStringDelimiter   Delimiter
-hi link           rubySharpBang         Special
+hi link ptCompleteTask       Number
+hi link ptContext            Type
+hi link ptSection            String
+hi link ptTask               Normal
 
 " SASS
-hi link           sassCssAttribute      Type
-hi link           sassClassChar         Type
-hi link           sassId                Type
-hi link           sassIdChar            Type
-hi link           sassMixinName         StorageClass
-hi link           sassVariable          Statement
-
-" Slim
-hi link           slimRubyOutputChar    Identifier
-hi link           slimClassChar         Type
-hi link           slimId                Type
-hi link           slimIdChar            Type
+hi link sassClassChar        Type
+hi link sassIdChar           Identifier
 
 " XML
-hi  link          xmlTag                Statement
-hi  link          xmlTagName            Statement
-hi  link          xmlEndTag             Statement
+hi link xmlTag               Statement
+hi link xmlTagName           Statement
+hi link xmlEndTag            Statement
 
 " YAML
-hi link           yamlBlockMappingKey   PreProc
-hi link           yamlDocumentStart     Comment
+hi link yamlBlockMappingKey  PreProc
+hi link yamlDocumentStart    Comment
+
+
+" Expand colorgroups
+" ----------------------------------------------------------------------
+
+let s:colors = {}
+let valid_cterm_colors =
+      \ [
+      \     'Black', 'DarkBlue', 'DarkGreen', 'DarkCyan',
+      \     'DarkRed', 'DarkMagenta', 'Brown', 'DarkYellow',
+      \     'LightGray', 'LightGrey', 'Gray', 'Grey',
+      \     'DarkGray', 'DarkGrey', 'Blue', 'LightBlue',
+      \     'Green', 'LightGreen', 'Cyan', 'LightCyan',
+      \     'Red', 'LightRed', 'Magenta', 'LightMagenta',
+      \     'Yellow', 'LightYellow', 'White',
+      \ ]
+for key in keys(colorgroup)
+  let s:colors = colorgroup[key]
+  if has_key(s:colors, 'TERM')
+    let term = s:colors['TERM']
+  else
+    let term = 'NONE'
+  endif
+  if has_key(s:colors, 'GUI')
+    let gui = s:colors['GUI']
+  else
+    let gui='NONE'
+  endif
+  if has_key(s:colors, 'GUIFG')
+    let guifg = s:colors['GUIFG']
+  else
+    let guifg='NONE'
+  endif
+  if has_key(s:colors, 'GUIBG')
+    let guibg = s:colors['GUIBG']
+  else
+    let guibg='NONE'
+  endif
+  if has_key(s:colors, 'CTERM')
+    let cterm = s:colors['CTERM']
+  else
+    let cterm=gui
+  endif
+  if has_key(s:colors, 'CTERMFG')
+    let ctermfg = s:colors['CTERMFG']
+  else
+    if index(valid_cterm_colors, guifg) != -1
+      let ctermfg=guifg
+    else
+      let ctermfg='Blue'
+    endif
+  endif
+  if has_key(s:colors, 'CTERMBG')
+    let ctermbg = s:colors['CTERMBG']
+  else
+    if index(valid_cterm_colors, guibg) != -1
+      let ctermbg=guibg
+    else
+      let ctermbg='NONE'
+    endif
+  endif
+  if has_key(s:colors, 'GUISP')
+    let guisp = s:colors['GUISP']
+  else
+    let guisp='NONE'
+  endif
+
+  if key =~ '^\k*$'
+    execute "hi ".key." term=".term." cterm=".cterm." gui=".gui." ctermfg=".ctermfg." guifg=".guifg." ctermbg=".ctermbg." guibg=".guibg." guisp=".guisp
+  endif
+endfor
