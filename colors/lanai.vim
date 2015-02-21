@@ -10,15 +10,23 @@
 :let cloud     = '#e6e7e7'
 " ------------------------
 :let darkleaf  = '#78ad7c'
-:let turquoise = '#abffb1'
-:let leaf      = '#b9ffa3'
-:let sky       = '#adf1d4'
-:let cobalt    = '#508dff'
-:let purple    = '#a1bbff'
+:let turquoise = '#9bfda6'
+:let leaf      = '#99e271'
+:let sky       = '#c4f2e0'
+:let cobalt    = '#406ddf'
+:let purple    = '#7a99ff'
 :let wine      = '#a84d70'
-:let aubergine = '#7f6592'
+:let aubergine = '#693d50'
 :let orange    = '#f4c3a5'
-:let sap       = '#fcecae'
+:let sap       = '#fde9a2'
+
+" Strange color issue for MacVim; Colors too saturated + wrong hue
+if has("gui_macvim")
+  :let turquoise = '#b8ffb1'
+  :let purple    = '#81a5ff'
+  :let wine      = '#a65575'
+  :let aubergine = '#816485'
+endif
 
 
 set background=dark
