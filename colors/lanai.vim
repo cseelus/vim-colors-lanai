@@ -14,7 +14,8 @@
 :let leaf      = '#99e271'
 :let sky       = '#c4f2e0'
 :let cobalt    = '#406ddf'
-:let purple    = '#7a99ff'
+:let blue      = '#7a99ff'
+:let purple    = '#a5acff'
 :let wine      = '#a84d70'
 :let aubergine = '#693d50'
 :let orange    = '#f4c3a5'
@@ -23,7 +24,7 @@
 " Strange color issue for MacVim; Colors too saturated + wrong hue
 if has("gui_macvim")
   :let turquoise = '#b8ffb1'
-  :let purple    = '#81a5ff'
+  :let blue      = '#81a5ff'
   :let wine      = '#a65575'
   :let aubergine = '#816485'
 endif
@@ -72,12 +73,12 @@ let colorgroup['Visual']       = {"GUIFG": darkrock,  "GUIBG":  sap}
 " Syntax
 " ----------------------------------------------------------------------
 let colorgroup['Comment']      = {"GUIFG": grey}
-let colorgroup['Constant']     = {"GUIFG": purple}
+let colorgroup['Constant']     = {"GUIFG": blue}
 let colorgroup['Delimiter']    = {"GUIFG": darkleaf}
 let colorgroup['Function']     = {"GUIFG": cobalt}
-let colorgroup['Identifier']   = {"GUIFG": purple}
+let colorgroup['Identifier']   = {"GUIFG": blue}
 let colorgroup['NonText']      = {"GUIFG": rock}
-let colorgroup['Number']       = {"GUIFG": sky}
+let colorgroup['Number']       = {"GUIFG": purple}
 let colorgroup['PreProc']      = {"GUIFG": wine}
 let colorgroup['Statement']    = {"GUIFG": wine}
 let colorgroup['Special']      = {"GUIFG": sap}
