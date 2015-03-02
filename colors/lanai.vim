@@ -2,31 +2,33 @@
 " ----------------------------------------------------------------------
 " Created by Chris Seelus (@cseelus)
 "
-:let darkrock  = '#171617'
-:let rock      = '#2c2d2e'
-:let darkgrey  = '#535557'
-:let grey      = '#82868a'
-:let lightgrey = '#d2d3d3'
-:let cloud     = '#e6e7e7'
+:let _darkrock  = '#171617'
+:let _rock      = '#2c2d2e'
+:let _darkgrey  = '#535557'
+:let _grey      = '#82868a'
+:let _lightgrey = '#d2d3d3'
+:let _cloud     = '#e6e7e7'
 " ------------------------
-:let darkleaf  = '#78ad7c'
-:let turquoise = '#9bfda6'
-:let leaf      = '#99e271'
-:let sky       = '#c4f2e0'
-:let cobalt    = '#406ddf'
-:let blue      = '#7a99ff'
-:let purple    = '#a5acff'
-:let wine      = '#a84d70'
-:let aubergine = '#693d50'
-:let orange    = '#f4c3a5'
-:let sap       = '#fde9a2'
+:let _darkleaf  = '#78ad7c'
+:let _turquoise = '#9bfda6'
+:let _leaf      = '#99e271'
+:let _sky       = '#b1f7e0'
+:let _cobalt    = '#406ddf'
+:let _blue      = '#7a99ff'
+:let _purple    = '#aaa2ff'
+:let _wine      = '#a84d70'
+:let _aubergine = '#7b3051'
+:let _orange    = '#fcd7c7'
+:let _sap       = '#fde9a2'
 
 " Strange color issue for MacVim; Colors too saturated + wrong hue
 if has("gui_macvim")
-  :let turquoise = '#b8ffb1'
-  :let blue      = '#81a5ff'
-  :let wine      = '#a65575'
-  :let aubergine = '#816485'
+  :let _turquoise = '#a1ffba'
+  :let _blue      = '#81a5ff'
+  :let _purple    = '#9ea1ff'
+  :let _wine      = '#97507e'
+  :let _aubergine = '#7d558a'
+  :let _sap       = '#fcf0c2'
 endif
 
 
@@ -42,58 +44,60 @@ let colorgroup = {}
 
 " Interface
 " ----------------------------------------------------------------------
-let colorgroup['Normal']       = {"GUIFG": cloud,     "GUIBG":  darkrock}
+let colorgroup['Normal']       = {"GUIFG": _cloud,     "GUIBG":  _darkrock}
 " ------------------------
-let colorgroup['Darker']       = {"GUIFG": grey,      "GUIBG":  darkrock}
-let colorgroup['ColorColumn']  = {"GUIFG": darkrock,  "GUIBG":  wine}
-let colorgroup['Conceal']      = {"GUIFG": cloud,     "GUIBG":  cobalt}
-let colorgroup['Cursor']       = {"GUIFG": darkrock,  "GUIBG":  cloud}
-let colorgroup['CursorLine']   = {                    "GUIBG":  "#404040"}
-let colorgroup['CursorLineNr'] = {"GUIFG": darkgrey,  "GUIBG":  darkrock}
-let colorgroup['Error']        = {                    "GUIBG":  wine}
-let colorgroup['Directory']    = {"GUIFG": turquoise, "GUIBG":  darkrock}
-let colorgroup['FoldColumn']   = {                    "GUIBG":  darkrock}
-let colorgroup['Folded']       = {"GUIFG": cloud,     "GUIBG":  rock}
-let colorgroup['LineNr']       = {"GUIFG": darkgrey,  "GUIBG":  darkrock}
-let colorgroup['MatchParen']   = {"GUIFG": darkrock,  "GUIBG":  cobalt}
-let colorgroup['ModeMsg']      = {"GUIFG": darkrock,  "GUIBG":  turquoise}
-let colorgroup['Pmenu']        = {"GUIFG": cloud,     "GUIBG":  rock}
-let colorgroup['PmenuSel']     = {"GUIFG": darkrock,  "GUIBG":  turquoise}
-let colorgroup['PmenuSbar']    = {                    "GUIBG":  darkrock}
-let colorgroup['Search']       = {                    "GUIBG":  rock}
-let colorgroup['SignColumn']   = {                    "GUIBG":  darkrock}
-let colorgroup['StatusLine']   = {"GUIFG": cloud,     "GUIBG":  rock}
-let colorgroup['StatusLineNC'] = {"GUIFG": cloud,     "GUIBG":  rock}
-let colorgroup['Title']        = {"GUIFG": turquoise}
-let colorgroup['Todo']         = {"GUIFG": darkrock,  "GUIBG":  cobalt}
-let colorgroup['VertSplit']    = {"GUIFG": rock,      "GUIBG":  rock}
-let colorgroup['Visual']       = {"GUIFG": darkrock,  "GUIBG":  sap}
+let colorgroup['Darker']       = {"GUIFG": _grey,      "GUIBG":  _darkrock}
+let colorgroup['ColorColumn']  = {"GUIFG": _darkrock,  "GUIBG":  _wine}
+let colorgroup['Conceal']      = {"GUIFG": _cloud,     "GUIBG":  _cobalt}
+let colorgroup['Cursor']       = {"GUIFG": _darkrock,  "GUIBG":  _cloud}
+let colorgroup['CursorLine']   = {"GUIFG": _cloud,     "GUIBG":  _rock}
+let colorgroup['CursorLineNr'] = {"GUIFG": _darkgrey,  "GUIBG":  _darkrock}
+let colorgroup['Error']        = {"GUIFG": _darkrock,  "GUIBG":  _wine}
+let colorgroup['Directory']    = {"GUIFG": _turquoise, "GUIBG":  _darkrock}
+let colorgroup['FoldColumn']   = {                     "GUIBG":  _darkrock}
+let colorgroup['Folded']       = {"GUIFG": _cloud,     "GUIBG":  _rock}
+let colorgroup['LineNr']       = {"GUIFG": _darkgrey,  "GUIBG":  _darkrock}
+let colorgroup['MatchParen']   = {"GUIFG": _darkrock,  "GUIBG":  _cobalt}
+let colorgroup['ModeMsg']      = {"GUIFG": _darkrock,  "GUIBG":  _turquoise}
+let colorgroup['Pmenu']        = {"GUIFG": _cloud,     "GUIBG":  _rock}
+let colorgroup['PmenuSel']     = {"GUIFG": _darkrock,  "GUIBG":  _turquoise}
+let colorgroup['PmenuSbar']    = {                     "GUIBG":  _darkrock}
+let colorgroup['Search']       = {                     "GUIBG":  _rock}
+let colorgroup['SignColumn']   = {                     "GUIBG":  _darkrock}
+let colorgroup['StatusLine']   = {"GUIFG": _cloud,     "GUIBG":  _rock}
+let colorgroup['StatusLineNC'] = {"GUIFG": _cloud,     "GUIBG":  _rock}
+let colorgroup['Title']        = {"GUIFG": _turquoise}
+let colorgroup['Todo']         = {"GUIFG": _darkrock,  "GUIBG":  _cobalt}
+let colorgroup['VertSplit']    = {"GUIFG": _rock,      "GUIBG":  _rock}
+let colorgroup['Visual']       = {"GUIFG": _darkrock,  "GUIBG":  _sap}
+let colorgroup['WarningMsg']   = {"GUIFG": _darkrock,  "GUIBG":  _aubergine}
 
 
 " Syntax
 " ----------------------------------------------------------------------
-let colorgroup['Comment']      = {"GUIFG": grey}
-let colorgroup['Constant']     = {"GUIFG": blue}
-let colorgroup['Delimiter']    = {"GUIFG": darkleaf}
-let colorgroup['Function']     = {"GUIFG": cobalt}
-let colorgroup['Identifier']   = {"GUIFG": blue}
-let colorgroup['NonText']      = {"GUIFG": rock}
-let colorgroup['Number']       = {"GUIFG": purple}
-let colorgroup['PreProc']      = {"GUIFG": wine}
-let colorgroup['Statement']    = {"GUIFG": wine}
-let colorgroup['Special']      = {"GUIFG": sap}
-let colorgroup['SpecialKey']   = {"GUIFG": lightgrey}
-let colorgroup['String']       = {"GUIFG": turquoise}
-let colorgroup['StorageClass'] = {"GUIFG": cloud,     "GUI": "bold"}
-let colorgroup['Type']         = {"GUIFG": aubergine}
-let colorgroup['Underlined']   = {"GUIFG": purple,    "GUI": "underline"}
+let colorgroup['Comment']      = {"GUIFG": _grey,      "GUI": "italic"}
+let colorgroup['Constant']     = {"GUIFG": _sky}
+let colorgroup['Function']     = {"GUIFG": _blue}
+let colorgroup['Identifier']   = {"GUIFG": _cloud,     "GUI": "bold"}
+let colorgroup['NonText']      = {"GUIFG": _rock}
+let colorgroup['Number']       = {"GUIFG": _purple}
+let colorgroup['PreProc']      = {"GUIFG": _wine}
+let colorgroup['Statement']    = {"GUIFG": _cobalt,    "GUI": "bold"}
+let colorgroup['Special']      = {"GUIFG": _sap}
+let colorgroup['SpecialKey']   = {"GUIFG": _lightgrey}
+let colorgroup['String']       = {"GUIFG": _turquoise}
+let colorgroup['StorageClass'] = {"GUIFG": _sap}
+let colorgroup['Type']         = {"GUIFG": _aubergine, "GUI": "bold"}
+let colorgroup['Underlined']   = {"GUIFG": _blue,      "GUI": "underline"}
 " ------------------------
-hi link Boolean              Constant
-hi link Conditional          Statement
-hi link Character            Constant
+hi link Boolean              Function
+hi link Conditional          PreProc
+hi link Character            Function
+hi link ErrorMsg             Function
 hi link Debug                Special
-hi link Define               PreProc
-hi link Exception            Statement
+hi link Define               Statement
+hi link Delimiter            String
+hi link Exception            PreProc
 hi link Float                Number
 hi link Include              PreProc
 hi link Label                Statement
@@ -112,19 +116,13 @@ hi link Tag                  Special
 hi link apacheDeclaration    PreProc
 
 " CSS
-hi link cssBoxAttr           String
-hi link cssCommonAttr        String
-hi link cssPositioningAttr   String
-hi link cssTextAttr          String
+hi link cssAttr              String
 
-" eruby
-hi link erubyExpression      Normal
-hi link erubyDelimiter       PreProc
-
-" Haml
-hi link hamlTag              Statement
+" CtrlP
+hi link CtrlPMatch           Function
 
 " HTML
+hi link htmlArg              Function
 hi link htmlTag              Statement
 hi link htmlEndTag           Statement
 
@@ -132,8 +130,11 @@ hi link htmlEndTag           Statement
 hi link texInputFile         PreProc
 
 " NERDtree
+hi link NerdTreeCWD          Statement
+hi link NerdTreeOpenable     Statement
 hi link NerdTreeClosable     Statement
-hi link NerdTreeDirSlash     Statement
+hi link NerdTreeDir          Function
+hi link NerdTreeDirSlash     Function
 
 " PHP
 hi link phpParent            Normal
@@ -146,17 +147,25 @@ hi link ptContext            Type
 hi link ptSection            String
 hi link ptTask               Normal
 
+" Ruby
+hi link RubyAccess           PreProc
+hi link RubyControl          PreProc
+hi link RubySymbol           String
+
 " SASS
 hi link sassClassChar        Type
 hi link sassIdChar           Identifier
+hi link sassVariable         Function
 
-" XML
-hi link xmlTag               Statement
-hi link xmlTagName           Statement
-hi link xmlEndTag            Statement
+" Slim
+hi link slimRubyChar         PreProc
+hi link slimRubyOutputChar   PreProc
+
+" VIM
+hi link vimCmdSep            Function
 
 " YAML
-hi link yamlBlockMappingKey  PreProc
+hi link yamlBlockMappingKey  Function
 hi link yamlDocumentStart    Comment
 
 
@@ -164,6 +173,7 @@ hi link yamlDocumentStart    Comment
 " ----------------------------------------------------------------------
 
 let s:colors = {}
+" http://choorucode.com/2011/07/29/vim-chart-of-color-names/
 let valid_cterm_colors =
       \ [
       \     'Black', 'DarkBlue', 'DarkGreen', 'DarkCyan',
