@@ -18,7 +18,7 @@
 :let _purple    = '#aaa2ff'
 :let _wine      = '#a84d70'
 :let _aubergine = '#7b3051'
-:let _orange    = '#fcd7c7'
+:let _orange    = '#fab89e'
 :let _sap       = '#fde9a2'
 
 " Strange color issue for MacVim; Colors too saturated + wrong hue
@@ -76,9 +76,10 @@ let colorgroup['WarningMsg']   = {"GUIFG": _darkrock,  "GUIBG":  _aubergine}
 " Syntax
 " ----------------------------------------------------------------------
 let colorgroup['Comment']      = {"GUIFG": _grey,      "GUI": "italic"}
-let colorgroup['Constant']     = {"GUIFG": _sky}
+let colorgroup['Constant']     = {"GUIFG": _orange}
+let colorgroup['Delimiter']    = {"GUIFG": _darkleaf}
 let colorgroup['Function']     = {"GUIFG": _blue}
-let colorgroup['Identifier']   = {"GUIFG": _cloud,     "GUI": "bold"}
+let colorgroup['Identifier']   = {"GUIFG": _wine,     "GUI": "bold"}
 let colorgroup['NonText']      = {"GUIFG": _rock}
 let colorgroup['Number']       = {"GUIFG": _purple}
 let colorgroup['PreProc']      = {"GUIFG": _wine}
@@ -86,87 +87,97 @@ let colorgroup['Statement']    = {"GUIFG": _cobalt,    "GUI": "bold"}
 let colorgroup['Special']      = {"GUIFG": _sap}
 let colorgroup['SpecialKey']   = {"GUIFG": _lightgrey}
 let colorgroup['String']       = {"GUIFG": _turquoise}
-let colorgroup['StorageClass'] = {"GUIFG": _sap}
+let colorgroup['StorageClass'] = {"GUIFG": _cloud,     "GUI": "bold"}
 let colorgroup['Type']         = {"GUIFG": _aubergine, "GUI": "bold"}
 let colorgroup['Underlined']   = {"GUIFG": _blue,      "GUI": "underline"}
 " ------------------------
-hi link Boolean              Function
-hi link Conditional          PreProc
-hi link Character            Function
-hi link ErrorMsg             Function
-hi link Debug                Special
-hi link Define               Statement
-hi link Delimiter            String
-hi link Exception            PreProc
-hi link Float                Number
-hi link Include              PreProc
-hi link Label                Statement
-hi link Macro                PreProc
-hi link Operator             PreProc
-hi link PreCondit            PreProc
-hi link Repeat               Statement
-hi link SpecialChar          Special
-hi link SpecialComment       Special
-hi link Structure            Type
-hi link Typedef              Type
-hi link Tag                  Special
+hi link Boolean               Function
+hi link Conditional           PreProc
+hi link Character             Function
+hi link ErrorMsg              Function
+hi link Debug                 Special
+hi link Define                Statement
+hi link Exception             PreProc
+hi link Float                 Number
+hi link Include               PreProc
+hi link Label                 Statement
+hi link Macro                 PreProc
+hi link Operator              PreProc
+hi link PreCondit             PreProc
+hi link Repeat                Statement
+hi link SpecialChar           Special
+hi link SpecialComment        Special
+hi link Structure             Type
+hi link Typedef               Type
+hi link Tag                   Special
 
 
 " Apache
-hi link apacheDeclaration    PreProc
+hi link apacheDeclaration     PreProc
 
 " CSS
-hi link cssAttr              String
+hi link cssAttr               String
 
 " CtrlP
-hi link CtrlPMatch           Function
+hi link CtrlPMatch            Function
+
+hi link GitGutterAdd          String
+hi link GitGutterChange       Special
+hi link GitGutterDelete       Identifier
+hi link GitGutterChangeDelete Constant
+
+" HAML
+hi link hamlTag               Function
 
 " HTML
-hi link htmlArg              Function
-hi link htmlTag              Statement
-hi link htmlEndTag           Statement
+hi link htmlTag               Function
+hi link htmlEndTag            Function
 
 " LaTeX
-hi link texInputFile         PreProc
+hi link texInputFile          PreProc
 
 " NERDtree
-hi link NerdTreeCWD          Statement
-hi link NerdTreeOpenable     Statement
-hi link NerdTreeClosable     Statement
-hi link NerdTreeDir          Function
-hi link NerdTreeDirSlash     Function
+hi link NerdTreeCWD           Statement
+hi link NerdTreeOpenable      Statement
+hi link NerdTreeClosable      Statement
+hi link NerdTreeDir           Function
+hi link NerdTreeDirSlash      Function
 
 " PHP
-hi link phpParent            Normal
-hi link phpRegion            Comment
-hi link phpVarSelector       Identifier
+hi link phpParent             Normal
+hi link phpRegion             Comment
+hi link phpVarSelector        Identifier
 
 " PlainTasks (.todo)
-hi link ptCompleteTask       Number
-hi link ptContext            Type
-hi link ptSection            String
-hi link ptTask               Normal
+hi link ptCompleteTask        Number
+hi link ptContext             Type
+hi link ptSection             String
+hi link ptTask                Normal
 
 " Ruby
-hi link RubyAccess           PreProc
-hi link RubyControl          PreProc
-hi link RubySymbol           String
+hi link RubyAccess            PreProc
+hi link RubyControl           PreProc
+hi link RubySymbol            String
 
 " SASS
-hi link sassClassChar        Type
-hi link sassIdChar           Identifier
-hi link sassVariable         Function
+hi link sassClassChar         Type
+hi link sassIdChar            Identifier
+hi link sassVariable          Function
 
 " Slim
-hi link slimRubyChar         PreProc
-hi link slimRubyOutputChar   PreProc
+hi link slimRubyChar          PreProc
+hi link slimRubyOutputChar    PreProc
+hi link slimText              Normal
 
 " VIM
-hi link vimCmdSep            Function
+hi link vimCmdSep             Function
 
 " YAML
-hi link yamlBlockMappingKey  Function
-hi link yamlDocumentStart    Comment
+hi link yamlBlockMappingKey   Function
+hi link yamlDocumentStart     Comment
+
+" XML
+hi link xmlEndTag             Function
 
 
 " Expand colorgroups
