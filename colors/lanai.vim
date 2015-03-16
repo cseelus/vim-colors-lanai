@@ -17,7 +17,7 @@
 :let _blue      = '#7a99ff'
 :let _purple    = '#aaa2ff'
 :let _wine      = '#a84d70'
-:let _aubergine = '#7b3051'
+:let _aubergine = '#9c6aad'
 :let _orange    = '#fab89e'
 :let _sap       = '#fde9a2'
 
@@ -26,8 +26,6 @@ if has("gui_macvim")
   :let _turquoise = '#a1ffba'
   :let _blue      = '#81a5ff'
   :let _purple    = '#9ea1ff'
-  " :let _wine      = '#97507e'
-  :let _aubergine = '#7d558a'
   :let _sap       = '#fcf0c2'
 endif
 
