@@ -23,7 +23,6 @@
 
 " Strange color issue for MacVim; Colors too saturated + wrong hue
 if has("gui_macvim")
-  :let _turquoise = '#a1ffba'
   :let _blue      = '#81a5ff'
   :let _purple    = '#9ea1ff'
   :let _sap       = '#fcf0c2'
@@ -47,7 +46,7 @@ let colorgroup['Normal']       = {"GUIFG": _cloud,     "GUIBG":  _darkrock}
 let colorgroup['Darker']       = {"GUIFG": _grey,      "GUIBG":  _darkrock}
 let colorgroup['ColorColumn']  = {"GUIFG": _darkrock,  "GUIBG":  _wine}
 let colorgroup['Conceal']      = {"GUIFG": _cloud,     "GUIBG":  _cobalt}
-let colorgroup['Cursor']       = {"GUIFG": _darkrock,  "GUIBG":  _cloud}
+let colorgroup['Cursor']       = {"GUIFG": _darkrock,  "GUIBG":  _turquoise}
 let colorgroup['CursorLine']   = {"GUIFG": _cloud,     "GUIBG":  _rock}
 let colorgroup['CursorLineNr'] = {"GUIFG": _darkgrey,  "GUIBG":  _darkrock}
 let colorgroup['Error']        = {"GUIFG": _darkrock,  "GUIBG":  _wine}
@@ -156,6 +155,7 @@ hi link ptTask                Normal
 " Ruby
 hi link RubyAccess            PreProc
 hi link RubyControl           PreProc
+hi link RubyStringDelimiter   Delimiter
 hi link RubySymbol            String
 
 " SASS
