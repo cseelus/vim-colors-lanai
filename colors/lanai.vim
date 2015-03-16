@@ -26,7 +26,7 @@ if has("gui_macvim")
   :let _turquoise = '#a1ffba'
   :let _blue      = '#81a5ff'
   :let _purple    = '#9ea1ff'
-  :let _wine      = '#97507e'
+  " :let _wine      = '#97507e'
   :let _aubergine = '#7d558a'
   :let _sap       = '#fcf0c2'
 endif
@@ -79,7 +79,7 @@ let colorgroup['Comment']      = {"GUIFG": _grey,      "GUI": "italic"}
 let colorgroup['Constant']     = {"GUIFG": _orange}
 let colorgroup['Delimiter']    = {"GUIFG": _darkleaf}
 let colorgroup['Function']     = {"GUIFG": _blue}
-let colorgroup['Identifier']   = {"GUIFG": _wine,     "GUI": "bold"}
+let colorgroup['Identifier']   = {"GUIFG": _wine}
 let colorgroup['NonText']      = {"GUIFG": _rock}
 let colorgroup['Number']       = {"GUIFG": _purple}
 let colorgroup['PreProc']      = {"GUIFG": _wine}
@@ -88,7 +88,7 @@ let colorgroup['Special']      = {"GUIFG": _sap}
 let colorgroup['SpecialKey']   = {"GUIFG": _lightgrey}
 let colorgroup['String']       = {"GUIFG": _turquoise}
 let colorgroup['StorageClass'] = {"GUIFG": _cloud,     "GUI": "bold"}
-let colorgroup['Type']         = {"GUIFG": _aubergine, "GUI": "bold"}
+let colorgroup['Type']         = {"GUIFG": _aubergine}
 let colorgroup['Underlined']   = {"GUIFG": _blue,      "GUI": "underline"}
 " ------------------------
 hi link Boolean               Function
@@ -121,6 +121,7 @@ hi link cssAttr               String
 " CtrlP
 hi link CtrlPMatch            Function
 
+" GitGutter
 hi link GitGutterAdd          String
 hi link GitGutterChange       Special
 hi link GitGutterDelete       Identifier
@@ -168,6 +169,14 @@ hi link sassVariable          Function
 hi link slimRubyChar          PreProc
 hi link slimRubyOutputChar    PreProc
 hi link slimText              Normal
+
+" Startify
+hi link StartifyNumber        Statement
+hi link StartifyBracket       Statement
+hi link StartifySection       Title
+hi link StartifyPath          Comment
+hi link StartifySlash         Comment
+hi link StartifyFile          StorageClass
 
 " VIM
 hi link vimCmdSep             Function
