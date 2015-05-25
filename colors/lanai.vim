@@ -21,6 +21,27 @@
 :let _orange    = '#fab89e'
 :let _sap       = '#fde9a2'
 
+if &background == "light"
+  :let _darkrock  = '#e6e7e7'
+  :let _rock      = '#b0b1b1'
+  :let _darkgrey  = '#535557'
+  :let _grey      = '#82868a'
+  :let _lightgrey = '#2c2d2e'
+  :let _cloud     = '#171617'
+  " ------------------------
+  :let _darkleaf  = '#78ad7c'
+  :let _turquoise = '#38b874'
+  :let _leaf      = '#99e271'
+  :let _sky       = '#b1f7e0'
+  :let _cobalt    = '#406ddf'
+  :let _blue      = '#7a99ff'
+  :let _purple    = '#aaa2ff'
+  :let _wine      = '#a84d70'
+  :let _aubergine = '#9c6aad'
+  :let _orange    = '#fab89e'
+  :let _sap       = '#fde9a2'
+endif
+
 " Strange color issue for MacVim; Colors too saturated + wrong hue
 if has("gui_macvim")
   :let _blue      = '#81a5ff'
@@ -29,7 +50,6 @@ if has("gui_macvim")
 endif
 
 
-set background=dark
 hi clear
 if exists("syntax_on")
   syntax reset
@@ -63,7 +83,7 @@ let colorgroup['Search']       = {                     "GUIBG":  _rock}
 let colorgroup['SignColumn']   = {                     "GUIBG":  _darkrock}
 let colorgroup['StatusLine']   = {"GUIFG": _cloud,     "GUIBG":  _rock}
 let colorgroup['StatusLineNC'] = {"GUIFG": _cloud,     "GUIBG":  _rock}
-let colorgroup['Title']        = {"GUIFG": _turquoise}
+let colorgroup['Title']        = {"GUIFG": _turquoise, "GUI": "bold"}
 let colorgroup['Todo']         = {"GUIFG": _darkrock,  "GUIBG":  _cobalt}
 let colorgroup['VertSplit']    = {"GUIFG": _rock,      "GUIBG":  _rock}
 let colorgroup['Visual']       = {"GUIFG": _darkrock,  "GUIBG":  _sap}
