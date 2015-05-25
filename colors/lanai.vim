@@ -21,8 +21,16 @@
 :let _orange    = '#fab89e'
 :let _sap       = '#fde9a2'
 
+" Strange color issue for MacVim; Colors too saturated + wrong hue
+if has("gui_macvim")
+  :let _blue      = '#81a5ff'
+  :let _purple    = '#9ea1ff'
+  :let _sap       = '#fcf0c2'
+endif
+
+" Light/inverted colors (darkrock-cloud, rock-lightgrey switched)
 if &background == "light"
-  :let _darkrock  = '#e6e7e7'
+  :let _darkrock  = '#fdfcf4'
   :let _rock      = '#b0b1b1'
   :let _darkgrey  = '#535557'
   :let _grey      = '#82868a'
@@ -39,14 +47,7 @@ if &background == "light"
   :let _wine      = '#a84d70'
   :let _aubergine = '#9c6aad'
   :let _orange    = '#fab89e'
-  :let _sap       = '#fde9a2'
-endif
-
-" Strange color issue for MacVim; Colors too saturated + wrong hue
-if has("gui_macvim")
-  :let _blue      = '#81a5ff'
-  :let _purple    = '#9ea1ff'
-  :let _sap       = '#fcf0c2'
+  :let _sap       = '#efdc8f'
 endif
 
 
