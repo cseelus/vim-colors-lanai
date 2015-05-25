@@ -31,8 +31,8 @@ endif
 " Light/inverted colors (darkrock-cloud, rock-lightgrey switched)
 if &background == "light"
   :let _darkrock  = '#fdfcf4'
-  :let _rock      = '#b0b1b1'
-  :let _darkgrey  = '#535557'
+  :let _rock      = '#d2d3d3'
+  :let _darkgrey  = '#a9aeb3'
   :let _grey      = '#82868a'
   :let _lightgrey = '#2c2d2e'
   :let _cloud     = '#171617'
@@ -42,10 +42,10 @@ if &background == "light"
   :let _leaf      = '#99e271'
   :let _sky       = '#b1f7e0'
   :let _cobalt    = '#406ddf'
-  :let _blue      = '#7a99ff'
-  :let _purple    = '#aaa2ff'
-  :let _wine      = '#a84d70'
-  :let _aubergine = '#9c6aad'
+  :let _blue      = '#5462a1'
+  :let _purple    = '#644eff'
+  :let _wine      = '#c22c67'
+  :let _aubergine = '#7f4d91'
   :let _orange    = '#fab89e'
   :let _sap       = '#efdc8f'
 endif
