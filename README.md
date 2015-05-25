@@ -4,7 +4,11 @@ A dark color scheme for VIM with bright and classy colors.
 
 Please use some plugin like [CSApprox](http://www.vim.org/scripts/script.php?script_id=2390) to make this work smoothly in a 256 colors or even 88 colors terminal.
 
-![Screenshot with Ruby code](https://raw.github.com/cseelus/vim-colors-lanai/master/vim-colors-lanai_preview.png)
+![Screenshot with Ruby code and dark background](https://raw.github.com/cseelus/vim-colors-lanai/master/vim-colors-lanai_preview.png)
+Screenshot with Ruby code and dark background
+
+![Screenshot with Ruby code and light background](https://raw.github.com/cseelus/vim-colors-lanai/master/vim-colors-lanai_light_preview.png)
+Screenshot with Ruby code and light background
 
 ## Adjusted highlightings for these plugins
 
