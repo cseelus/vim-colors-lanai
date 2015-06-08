@@ -14,6 +14,7 @@ Please use some plugin like [CSApprox](http://www.vim.org/scripts/script.php?scr
 
 ## Highlightings for these plugins
 
+- CtrlP
 - GitGutter
 - PlainTasks (.todo)
 - NERDTree
@@ -24,7 +25,6 @@ Please use some plugin like [CSApprox](http://www.vim.org/scripts/script.php?scr
 - Apache Config
 - CoffeeScript
 - CSS
-- CtrlP
 - JavaScript
 - Haml
 - HTML
@@ -33,5 +33,6 @@ Please use some plugin like [CSApprox](http://www.vim.org/scripts/script.php?scr
 - Ruby
 - Sass
 - Slim
+- VimL
 - YAML
 - XML
