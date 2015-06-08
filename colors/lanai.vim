@@ -10,22 +10,24 @@
 :let _cloud     = '#e6e7e7'
 " ------------------------
 :let _darkleaf  = '#78ad7c'
-:let _turquoise = '#9bfda6'
-:let _leaf      = '#99e271'
-:let _sky       = '#b1f7e0'
-:let _cobalt    = '#406ddf'
-:let _blue      = '#7a99ff'
-:let _purple    = '#aaa2ff'
-:let _wine      = '#a84d70'
-:let _aubergine = '#9c6aad'
-:let _orange    = '#fab89e'
+:let _turquoise = '#b4ffb8'
+:let _leaf      = '#cce08f'
+:let _sky       = '#b3e4eb'
+:let _cobalt    = '#6d90d1'
+:let _blue      = '#a7bbff'
+" :let _cobalt    = '#596ccd'
+" :let _blue      = '#a8bfff'
+:let _purple    = '#bba2ff'
+:let _wine      = '#c77c9c'
+:let _aubergine = '#a279b1'
+:let _orange    = '#f8cdbd'
 :let _sap       = '#fde9a2'
 
 " Strange color issue for MacVim; Colors too saturated + wrong hue
 if has("gui_macvim")
-  :let _blue      = '#81a5ff'
-  :let _purple    = '#9ea1ff'
-  :let _sap       = '#fcf0c2'
+  " :let _blue      = '#81a5ff'
+  " :let _purple    = '#9ea1ff'
+  " :let _sap       = '#fcf0c2'
 endif
 
 " Light/inverted colors (darkrock-cloud, rock-lightgrey switched)
@@ -38,16 +40,16 @@ if &background == "light"
   :let _cloud     = '#171617'
   " ------------------------
   :let _darkleaf  = '#78ad7c'
-  :let _turquoise = '#38b874'
+  :let _turquoise = '#47d747'
   :let _leaf      = '#99e271'
-  :let _sky       = '#b1f7e0'
+  :let _sky       = '#2dc1dd'
   :let _cobalt    = '#406ddf'
-  :let _blue      = '#5462a1'
+  :let _blue      = '#4c67cf'
   :let _purple    = '#644eff'
   :let _wine      = '#c22c67'
   :let _aubergine = '#7f4d91'
   :let _orange    = '#fab89e'
-  :let _sap       = '#efdc8f'
+  :let _sap       = '#d5c809'
 endif
 
 
@@ -80,7 +82,7 @@ let colorgroup['ModeMsg']      = {"GUIFG": _darkrock,  "GUIBG":  _turquoise}
 let colorgroup['Pmenu']        = {"GUIFG": _cloud,     "GUIBG":  _rock}
 let colorgroup['PmenuSel']     = {"GUIFG": _darkrock,  "GUIBG":  _turquoise}
 let colorgroup['PmenuSbar']    = {                     "GUIBG":  _darkrock}
-let colorgroup['Search']       = {                     "GUIBG":  _rock}
+let colorgroup['Search']       = {                     "GUIBG":  _darkgrey, "GUI": "underline"}
 let colorgroup['SignColumn']   = {                     "GUIBG":  _darkrock}
 let colorgroup['StatusLine']   = {"GUIFG": _cloud,     "GUIBG":  _rock}
 let colorgroup['StatusLineNC'] = {"GUIFG": _cloud,     "GUIBG":  _rock}
@@ -93,7 +95,9 @@ let colorgroup['WarningMsg']   = {"GUIFG": _darkrock,  "GUIBG":  _aubergine}
 
 " Syntax
 " ----------------------------------------------------------------------
+let colorgroup['Access']  =      {"GUIFG": _turquoise, "GUI": "bold"}
 let colorgroup['Comment']      = {"GUIFG": _grey,      "GUI": "italic"}
+let colorgroup['Conditional']  = {"GUIFG": _leaf}
 let colorgroup['Constant']     = {"GUIFG": _orange}
 let colorgroup['Delimiter']    = {"GUIFG": _darkleaf}
 let colorgroup['Function']     = {"GUIFG": _blue}
@@ -101,23 +105,23 @@ let colorgroup['Identifier']   = {"GUIFG": _wine}
 let colorgroup['NonText']      = {"GUIFG": _rock}
 let colorgroup['Number']       = {"GUIFG": _purple}
 let colorgroup['PreProc']      = {"GUIFG": _wine}
-let colorgroup['Statement']    = {"GUIFG": _cobalt,    "GUI": "bold"}
+let colorgroup['Statement']    = {"GUIFG": _cobalt}
 let colorgroup['Special']      = {"GUIFG": _sap}
 let colorgroup['SpecialKey']   = {"GUIFG": _lightgrey}
 let colorgroup['String']       = {"GUIFG": _turquoise}
 let colorgroup['StorageClass'] = {"GUIFG": _cloud,     "GUI": "bold"}
+let colorgroup['Symbol']       = {"GUIFG": _sky}
 let colorgroup['Type']         = {"GUIFG": _aubergine}
 let colorgroup['Underlined']   = {"GUIFG": _blue,      "GUI": "underline"}
 " ------------------------
 hi link Boolean               Function
-hi link Conditional           PreProc
 hi link Character             Function
 hi link ErrorMsg              Function
 hi link Debug                 Special
 hi link Define                Statement
 hi link Exception             PreProc
 hi link Float                 Number
-hi link Include               PreProc
+hi link Include               Function
 hi link Label                 Statement
 hi link Macro                 PreProc
 hi link Operator              PreProc
@@ -130,11 +134,8 @@ hi link Typedef               Type
 hi link Tag                   Special
 
 
-" Apache
-hi link apacheDeclaration     PreProc
-
-" CSS
-hi link cssAttr               String
+" Plugins
+" ----------------------------------------------------------------------
 
 " CtrlP
 hi link CtrlPMatch            Function
@@ -145,27 +146,14 @@ hi link GitGutterChange       Special
 hi link GitGutterDelete       Identifier
 hi link GitGutterChangeDelete Constant
 
-" HAML
-hi link hamlTag               Function
-
-" HTML
-hi link htmlTag               Function
-hi link htmlEndTag            Function
-
-" LaTeX
-hi link texInputFile          PreProc
-
 " NERDtree
 hi link NerdTreeCWD           Statement
+hi link NerdTreeHelpKey       Function
+hi link NerdTreeHelpTitle     Statement
 hi link NerdTreeOpenable      Statement
 hi link NerdTreeClosable      Statement
 hi link NerdTreeDir           Function
 hi link NerdTreeDirSlash      Function
-
-" PHP
-hi link phpParent             Normal
-hi link phpRegion             Comment
-hi link phpVarSelector        Identifier
 
 " PlainTasks (.todo)
 hi link ptCompleteTask        Number
@@ -173,11 +161,53 @@ hi link ptContext             Type
 hi link ptSection             String
 hi link ptTask                Normal
 
+
+" Language
+" ----------------------------------------------------------------------
+
+" Apache
+hi link apacheDeclaration     PreProc
+
+" CoffeeScript
+hi link cssClass              Type
+hi link coffeeExtendedOp      Function
+hi link coffeeObject          Statement
+hi link coffeeObjAssign       Function
+hi link coffeeParen           Function
+
+" CSS
+hi link cssAttr               String
+
+" HAML
+hi link hamlTag               Function
+
+" HTML
+hi link htmlTag               Function
+hi link htmlEndTag            Function
+
+" JavaScript
+hi link javascriptFuncArg     Function
+hi link javascriptFuncComma   Function
+hi link javascriptFuncDef     Statement
+hi link javascriptFuncKeyword Statement
+hi link javascriptOpSymbols   Type
+hi link javascriptParens      Function
+hi link javascriptEndcolons   Function
+
+" LaTeX
+hi link texInputFile          PreProc
+
+" PHP
+hi link phpParent             Normal
+hi link phpRegion             Comment
+hi link phpVarSelector        Identifier
+
 " Ruby
-hi link RubyAccess            PreProc
-hi link RubyControl           PreProc
+hi link RubyAccess            Access
+hi link RubyControl           Function
+hi link RubyInclude           Include
 hi link RubyStringDelimiter   Delimiter
-hi link RubySymbol            String
+hi link RubySymbol            Symbol
 
 " SASS
 hi link sassClassChar         Type
@@ -197,7 +227,7 @@ hi link StartifyPath          Comment
 hi link StartifySlash         Comment
 hi link StartifyFile          StorageClass
 
-" VIM
+" VimL
 hi link vimCmdSep             Function
 
 " YAML

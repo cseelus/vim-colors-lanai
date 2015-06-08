@@ -2,15 +2,17 @@
 
 A dark color scheme for VIM with bright and classy colors.
 
-Please use some plugin like [CSApprox](http://www.vim.org/scripts/script.php?script_id=2390) to make this work smoothly in a 256 colors or even 88 colors terminal.
+Clean and easy on the eyes, yet its strong colors make it suitable to code even in the darkest nights (dark background) and the fiercest sun (light background).
+
+Please use some plugin like [CSApprox](http://www.vim.org/scripts/script.php?script_id=2390) to make this work smoothly in 256 colors or even 88 colors terminals.
 
 ![Screenshot with Ruby code and dark background](https://raw.github.com/cseelus/vim-colors-lanai/master/vim-colors-lanai_preview.png)
-Screenshot with Ruby code and dark background
+###### Screenshot with Ruby code and dark background
 
 ![Screenshot with Ruby code and light background](https://raw.github.com/cseelus/vim-colors-lanai/master/vim-colors-lanai_light_preview.png)
-Screenshot with Ruby code and light background
+###### Screenshot with Ruby code and light background
 
-## Adjusted highlightings for these plugins
+## Highlightings for these plugins
 
 - GitGutter
 - PlainTasks (.todo)
@@ -20,8 +22,10 @@ Screenshot with Ruby code and light background
 ## Syntax highlighting adjustments for
 
 - Apache Config
+- CoffeeScript
 - CSS
 - CtrlP
+- JavaScript
 - Haml
 - HTML
 - LaTeX
