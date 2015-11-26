@@ -4,52 +4,49 @@
 "
 :let _darkrock   = '#171617'
 :let _rock       = '#2c2d2e'
-:let _darkgrey   = '#535557'
-:let _grey       = '#82868a'
-:let _mediumgrey = '#aaa0aa'
-:let _lightgrey  = '#d2d3d3'
+:let _darkgray   = '#535557'
+:let _gray       = '#767b86'
+:let _mediumgray = '#cec5ce'
+:let _lightgray  = '#d2d3d3'
 :let _cloud      = '#e6e7e7'
 " --------------------------
-:let _darkleaf   = '#78ad7c'
-:let _turquoise  = '#b4ffb8'
-:let _leaf       = '#bed587'
+:let _turquoise  = '#9bfda6'
+:let _leaf       = '#99e271'
 :let _sky        = '#b3e4eb'
-:let _cobalt     = '#6d90d1'
-:let _blue       = '#a7bbff'
-" :let _cobalt     = '#596ccd'
-" :let _blue       = '#a8bfff'
-:let _purple     = '#bba2ff'
-:let _wine       = '#c77c9c'
-:let _aubergine  = '#a279b1'
-:let _orange     = '#fed4cc'
-:let _sap        = '#fbe7a0'
+:let _cobalt     = '#406ddf'
+:let _purple     = '#7a99ff'
+:let _wine       = '#a84d70'
+:let _aubergine  = '#693d50'
+:let _sap        = '#fde9a2'
 
 " Strange color issue for MacVim; Colors too saturated + wrong hue
 if has("gui_macvim")
-  " :let _blue      = '#81a5ff'
-  " :let _purple    = '#9ea1ff'
-  " :let _sap       = '#fcf0c2'
+  :let _turquoise  = '#b4ffb8'
+  " :let _leaf       = '#bed587'
+  " :let _sky        = '#b3e4eb'
+  " :let _cobalt     = '#4e6cd7'
+  " :let _purple     = '#9cafff'
+  :let _wine       = '#af5d7e'
+  :let _aubergine  = '#a279b1'
+  " :let _sap        = '#fbe7a0'
 endif
 
 " Light/inverted colors (darkrock-cloud, rock-lightgrey switched)
 if &background == "light"
   :let _darkrock   = '#f8eed8'
   :let _rock       = '#ded3bb'
-  :let _darkgrey   = '#a9aeb3'
-  :let _grey       = '#82868a'
-  :let _lightgrey  = '#2c2d2e'
+  :let _darkgray   = '#a9aeb3'
+  :let _gray       = '#82868a'
+  :let _lightgray  = '#2c2d2e'
   :let _cloud      = '#171617'
   " --------------------------
-  :let _darkleaf   = '#78ad7c'
   :let _turquoise  = '#1a9914'
   :let _leaf       = '#93c619'
   :let _sky        = '#27a9c6'
   :let _cobalt     = '#2552ce'
-  :let _blue       = '#717db1'
   :let _purple     = '#644eff'
   :let _wine       = '#c22c67'
   :let _aubergine  = '#7f4d91'
-  :let _orange     = '#e3871e'
   :let _sap        = '#cfc208'
 endif
 
@@ -67,23 +64,23 @@ let colorgroup = {}
 " ----------------------------------------------------------------------
 let colorgroup['Normal']       = {"GUIFG": _cloud,     "GUIBG":  _darkrock}
 " ------------------------
-let colorgroup['Darker']       = {"GUIFG": _grey,      "GUIBG":  _darkrock}
+let colorgroup['Darker']       = {"GUIFG": _gray,      "GUIBG":  _darkrock}
 let colorgroup['ColorColumn']  = {"GUIFG": _darkrock,  "GUIBG":  _wine}
 let colorgroup['Conceal']      = {"GUIFG": _cloud,     "GUIBG":  _cobalt}
 let colorgroup['Cursor']       = {"GUIFG": _darkrock,  "GUIBG":  _turquoise}
 let colorgroup['CursorLine']   = {"GUIFG": _cloud,     "GUIBG":  _rock}
-let colorgroup['CursorLineNr'] = {"GUIFG": _darkgrey,  "GUIBG":  _darkrock}
-let colorgroup['Error']        = {"GUIFG": _darkrock,  "GUIBG":  _wine}
+let colorgroup['CursorLineNr'] = {"GUIFG": _darkgray,  "GUIBG":  _darkrock}
 let colorgroup['Directory']    = {"GUIFG": _turquoise, "GUIBG":  _darkrock}
+let colorgroup['Error']        = {"GUIFG": _darkrock,  "GUIBG":  _wine}
 let colorgroup['FoldColumn']   = {                     "GUIBG":  _darkrock}
 let colorgroup['Folded']       = {"GUIFG": _cloud,     "GUIBG":  _rock}
-let colorgroup['LineNr']       = {"GUIFG": _darkgrey,  "GUIBG":  _darkrock}
+let colorgroup['LineNr']       = {"GUIFG": _darkgray,  "GUIBG":  _darkrock}
 let colorgroup['MatchParen']   = {"GUIFG": _darkrock,  "GUIBG":  _cobalt}
 let colorgroup['ModeMsg']      = {"GUIFG": _darkrock,  "GUIBG":  _turquoise}
 let colorgroup['Pmenu']        = {"GUIFG": _cloud,     "GUIBG":  _rock}
 let colorgroup['PmenuSel']     = {"GUIFG": _darkrock,  "GUIBG":  _turquoise}
 let colorgroup['PmenuSbar']    = {                     "GUIBG":  _darkrock}
-let colorgroup['Search']       = {                     "GUIBG":  _darkgrey, "GUI": "underline"}
+let colorgroup['Search']       = {                     "GUIBG":  _darkgray, "GUI": "underline"}
 let colorgroup['SignColumn']   = {                     "GUIBG":  _darkrock}
 let colorgroup['StatusLine']   = {"GUIFG": _cloud,     "GUIBG":  _rock}
 let colorgroup['StatusLineNC'] = {"GUIFG": _cloud,     "GUIBG":  _rock}
@@ -96,25 +93,25 @@ let colorgroup['WarningMsg']   = {"GUIFG": _darkrock,  "GUIBG":  _aubergine}
 
 " Syntax
 " ----------------------------------------------------------------------
-let colorgroup['Access']       = {"GUIFG": _turquoise, "GUI": "bold"}
-let colorgroup['Comment']      = {"GUIFG": _grey,      "GUI": "italic"}
+let colorgroup['Access']       = {"GUIFG": _turquoise, "GUI": "italic"}
+let colorgroup['Comment']      = {"GUIFG": _gray,      "GUI": "italic"}
 let colorgroup['Conditional']  = {"GUIFG": _leaf}
-let colorgroup['Constant']     = {"GUIFG": _orange,    "GUI": "italic"}
-let colorgroup['Delimiter']    = {"GUIFG": _darkleaf}
-let colorgroup['Function']     = {"GUIFG": _blue,      "GUI": "bold"}
-let colorgroup['Identifier']   = {"GUIFG": _wine}
+let colorgroup['Constant']     = {"GUIFG": _aubergine, "GUI": "italic"}
+let colorgroup['Delimiter']    = {"GUIFG": _wine}
+let colorgroup['Function']     = {"GUIFG": _purple}
+let colorgroup['Identifier']   = {"GUIFG": _wine,      "GUI": "italic"}
 let colorgroup['NonText']      = {"GUIFG": _rock}
 let colorgroup['Number']       = {"GUIFG": _purple}
 let colorgroup['PreProc']      = {"GUIFG": _wine}
-let colorgroup['Statement']    = {"GUIFG": _cobalt,     "GUI": "bold"}
+let colorgroup['Statement']    = {"GUIFG": _cobalt}
 let colorgroup['Special']      = {"GUIFG": _sap}
-let colorgroup['SpecialKey']   = {"GUIFG": _lightgrey}
+let colorgroup['SpecialKey']   = {"GUIFG": _lightgray}
 let colorgroup['String']       = {"GUIFG": _turquoise}
 let colorgroup['StorageClass'] = {"GUIFG": _cloud,     "GUI": "bold"}
-let colorgroup['Structure']    = {"GUIFG": _mediumgrey}
+let colorgroup['Structure']    = {"GUIFG": _mediumgray}
 let colorgroup['Symbol']       = {"GUIFG": _sky}
 let colorgroup['Type']         = {"GUIFG": _aubergine}
-let colorgroup['Underlined']   = {"GUIFG": _blue,      "GUI": "underline"}
+let colorgroup['Underlined']   = {"GUIFG": _purple,    "GUI": "underline"}
 " ------------------------
 hi link Boolean               Number
 hi link Character             Function
@@ -199,6 +196,10 @@ hi link javascriptEndcolons   Function
 " LaTeX
 hi link texInputFile          PreProc
 
+" Markdown
+hi link mkdCode               Identifier
+hi link mkdIndentCode         Identifier
+
 " PHP
 hi link phpParent             Normal
 hi link phpRegion             Comment
@@ -208,8 +209,8 @@ hi link phpVarSelector        Identifier
 hi link RubyAccess            Access
 hi link RubyControl           Function
 hi link RubyInclude           Include
+hi link RubyInterpolation     Include
 " hi link RubyPseudoVariable    Type
-hi link RubyStringDelimiter   Delimiter
 hi link RubySymbol            Symbol
 
 " SASS
@@ -218,6 +219,9 @@ hi link sassIdChar            Identifier
 hi link sassVariable          Function
 
 " Slim
+hi link slimDocType           Function
+hi link slimDocTypeKeyword    Statement
+hi link slimText              Normal
 hi link slimRubyChar          PreProc
 hi link slimRubyOutputChar    PreProc
 hi link slimText              Normal
